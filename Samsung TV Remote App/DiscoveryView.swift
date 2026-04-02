@@ -17,6 +17,8 @@ struct DiscoveryView: View {
     @State private var showDebugLog = false
     @State private var manualIP = ""
     @State private var manualName = ""
+    @State private var hasSearched = false
+    @State private var isConnecting = false
     
     var body: some View {
         NavigationView {
@@ -106,6 +108,7 @@ struct DiscoveryView: View {
                     
                     // Search button
                     Button(action: {
+                        hasSearched = true
                         discoveryService.startDiscovery()
                     }) {
                         HStack {
@@ -184,7 +187,7 @@ struct DiscoveryView: View {
                                 .padding(.horizontal, 20)
                             }
                         }
-                    } else if !discoveryService.isSearching {
+                    } else if !discoveryService.isSearching && hasSearched {
                         VStack(spacing: 16) {
                             Image(systemName: "wifi.slash")
                                 .font(.system(size: 50))
@@ -233,6 +236,29 @@ struct DiscoveryView: View {
                 }
             }
             .navigationBarHidden(true)
+            .overlay {
+                if isConnecting {
+                    ZStack {
+                        Color.black.opacity(0.55)
+                            .ignoresSafeArea()
+                        VStack(spacing: 16) {
+                            ProgressView()
+                                .tint(.white)
+                                .scaleEffect(1.4)
+                            Text("Connecting…")
+                                .font(.system(size: 15, weight: .semibold))
+                                .foregroundColor(.white)
+                        }
+                        .padding(32)
+                        .background(
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(Color(red: 0.12, green: 0.12, blue: 0.18).opacity(0.95))
+                        )
+                    }
+                    .transition(.opacity)
+                    .animation(.easeInOut(duration: 0.2), value: isConnecting)
+                }
+            }
         }
         .sheet(isPresented: $showRemote) {
             if let selectedTV = selectedTV {
@@ -261,6 +287,7 @@ struct DiscoveryView: View {
     }
     
     private func connectToTV(ip: String, name: String) {
+        isConnecting = true
         let tv = SamsungTV(ip: ip)
         tv.tvName = name
         tv.connect()
@@ -280,6 +307,7 @@ struct DiscoveryView: View {
         
         // Wait a moment for connection, then show remote
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            isConnecting = false
             showRemote = true
         }
     }
