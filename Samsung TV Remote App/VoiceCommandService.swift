@@ -265,7 +265,7 @@ class VoiceCommandService: ObservableObject {
         if matches(text, ["fast forward", "skip ahead", "forward"]) {
             return .key("KEY_FF")
         }
-        if matches(text, ["rewind", "go back", "skip back", "backwards"]) {
+        if matches(text, ["rewind", "skip back", "backwards"]) {
             return .key("KEY_REWIND")
         }
 
