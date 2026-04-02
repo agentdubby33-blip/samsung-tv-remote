@@ -1,1 +1,482 @@
-Ly8KLy8gIFRWRGlzY292ZXJ5U2VydmljZS5zd2lmdAovLyAgU2Ftc3VuZyBUViBSZW1vdGUKLy8KLy8gIFNlcnZpY2UgZm9yIGRpc2NvdmVyaW5nIFNhbXN1bmcgVFZzIG9uIGxvY2FsIG5ldHdvcmsgdXNpbmcgU1NEUAovLwoKaW1wb3J0IEZvdW5kYXRpb24KaW1wb3J0IE5ldHdvcmsKaW1wb3J0IENvbWJpbmUKCnN0cnVjdCBEaXNjb3ZlcmVkVFY6IElkZW50aWZpYWJsZSwgQ29kYWJsZSB7CiAgICBsZXQgaWQ6IFVVSUQKICAgIGxldCBuYW1lOiBTdHJpbmcKICAgIGxldCBpcDogU3RyaW5nCiAgICBsZXQgbW9kZWw6IFN0cmluZz8KICAgIGxldCBwb3J0OiBJbnQKICAgIAogICAgaW5pdChpZDogVVVJRCA9IFVVSUQoKSwgbmFtZTogU3RyaW5nLCBpcDogU3RyaW5nLCBtb2RlbDogU3RyaW5nPywgcG9ydDogSW50KSB7CiAgICAgICAgc2VsZi5pZCA9IGlkCiAgICAgICAgc2VsZi5uYW1lID0gbmFtZQogICAgICAgIHNlbGYuaXAgPSBpcAogICAgICAgIHNlbGYubW9kZWwgPSBtb2RlbAogICAgICAgIHNlbGYucG9ydCA9IHBvcnQKICAgIH0KfQoKY2xhc3MgVFZEaXNjb3ZlcnlTZXJ2aWNlOiBPYnNlcnZhYmxlT2JqZWN0IHsKICAgIEBQdWJsaXNoZWQgdmFyIGRpc2NvdmVyZWRUVnM6IFtEaXNjb3ZlcmVkVFZdID0gW10KICAgIEBQdWJsaXNoZWQgdmFyIHNhdmVkVFZzOiBbRGlzY292ZXJlZFRWXSA9IFtdCiAgICBAUHVibGlzaGVkIHZhciBpc1NlYXJjaGluZyA9IGZhbHNlCiAgICBAUHVibGlzaGVkIHZhciBkZWJ1Z0xvZzogW1N0cmluZ10gPSBbXQogICAgQFB1Ymxpc2hlZCB2YXIgbmV0d29ya0Vycm9yOiBTdHJpbmc/CiAgICAKICAgIHByaXZhdGUgdmFyIGxpc3RlbmVyOiBOV0xpc3RlbmVyPwogICAgcHJpdmF0ZSB2YXIgc2VuZENvbm5lY3Rpb246IE5XQ29ubmVjdGlvbj8KICAgIHByaXZhdGUgbGV0IGRpc3BhdGNoUXVldWUgPSBEaXNwYXRjaFF1ZXVlKGxhYmVsOiAiY29tLnNhbXN1bmd0di5kaXNjb3ZlcnkiKQogICAgcHJpdmF0ZSB2YXIgbmV0d29ya01vbml0b3I6IE5XUGF0aE1vbml0b3I/CiAgICAKICAgIC8vIFNTRFAgbXVsdGljYXN0IGFkZHJlc3MgYW5kIHBvcnQKICAgIHByaXZhdGUgbGV0IHNzZHBBZGRyZXNzID0gIjIzOS4yNTUuMjU1LjI1MCIKICAgIHByaXZhdGUgbGV0IHNzZHBQb3J0OiBVSW50MTYgPSAxOTAwCiAgICBwcml2YXRlIHZhciBkaXNjb3ZlcnlUaW1lcjogRGlzcGF0Y2hXb3JrSXRlbT8KICAgIAogICAgcHJpdmF0ZSBsZXQgc2F2ZWRUVnNLZXkgPSAic2F2ZWRfdHZzIgogICAgCiAgICBpbml0KCkgewogICAgICAgIGxvYWRTYXZlZFRWcygpCiAgICAgICAgY2hlY2tOZXR3b3JrU3RhdHVzKCkKICAgIH0KICAgIAogICAgcHJpdmF0ZSBmdW5jIGNoZWNrTmV0d29ya1N0YXR1cygpIHsKICAgICAgICBuZXR3b3JrTW9uaXRvciA9IE5XUGF0aE1vbml0b3IoKQogICAgICAgIG5ldHdvcmtNb25pdG9yPy5wYXRoVXBkYXRlSGFuZGxlciA9IHsgW3dlYWsgc2VsZl0gcGF0aCBpbgogICAgICAgICAgICBEaXNwYXRjaFF1ZXVlLm1haW4uYXN5bmMgewogICAgICAgICAgICAgICAgaWYgcGF0aC5zdGF0dXMgPT0gLnNhdGlzZmllZCB7CiAgICAgICAgICAgICAgICAgICAgaWYgcGF0aC51c2VzSW50ZXJmYWNlVHlwZSgud2lmaSkgewogICAgICAgICAgICAgICAgICAgICAgICBzZWxmPy5uZXR3b3JrRXJyb3IgPSBuaWwKICAgICAgICAgICAgICAgICAgICAgICAgc2VsZj8ubG9nKCLinIUgV2lGaSBjb25uZWN0aW9uIGRldGVjdGVkIikKICAgICAgICAgICAgICAgICAgICB9IGVsc2UgaWYgcGF0aC51c2VzSW50ZXJmYWNlVHlwZSguY2VsbHVsYXIpIHsKICAgICAgICAgICAgICAgICAgICAgICAgc2VsZj8ubmV0d29ya0Vycm9yID0gIk11c3QgYmUgb24gV2lGaSwgbm90IGNlbGx1bGFyIGRhdGEiCiAgICAgICAgICAgICAgICAgICAgICAgIHNlbGY/LmxvZygi4pqg77iPIENvbm5lY3RlZCB2aWEgY2VsbHVsYXIgLSBXaUZpIHJlcXVpcmVkIikKICAgICAgICAgICAgICAgICAgICB9IGVsc2UgewogICAgICAgICAgICAgICAgICAgICAgICBzZWxmPy5uZXR3b3JrRXJyb3IgPSAiVW5rbm93biBuZXR3b3JrIHR5cGUiCiAgICAgICAgICAgICAgICAgICAgICAgIHNlbGY/LmxvZygi4pqg77iPIFVua25vd24gbmV0d29yayBpbnRlcmZhY2UgdHlwZSIpCiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgICAgICAgICBzZWxmPy5uZXR3b3JrRXJyb3IgPSAiTm8gbmV0d29yayBjb25uZWN0aW9uIgogICAgICAgICAgICAgICAgICAgIHNlbGY/LmxvZygi4p2MIE5vIG5ldHdvcmsgY29ubmVjdGlvbiBhdmFpbGFibGUiKQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAjaWYgdGFyZ2V0RW52aXJvbm1lbnQoc2ltdWxhdG9yKQogICAgICAgICAgICAgICAgc2VsZj8ubG9nKCLimqDvuI8gUnVubmluZyBvbiBTSU1VTEFUT1IgLSBtdWx0aWNhc3QgbWF5IG5vdCB3b3JrISIpCiAgICAgICAgICAgICAgICBzZWxmPy5uZXR3b3JrRXJyb3IgPSAiU2ltdWxhdG9yIGRldGVjdGVkIC0gcGxlYXNlIHRlc3Qgb24gYSByZWFsIGRldmljZSIKICAgICAgICAgICAgICAgICNlbmRpZgogICAgICAgICAgICB9CiAgICAgICAgfQogICAgICAgIG5ldHdvcmtNb25pdG9yPy5zdGFydChxdWV1ZTogRGlzcGF0Y2hRdWV1ZS5nbG9iYWwocW9zOiAudXRpbGl0eSkpCiAgICB9CiAgICAKICAgIGZ1bmMgc3RhcnREaXNjb3ZlcnkoKSB7CiAgICAgICAgbG9nKCLwn5SNIFN0YXJ0aW5nIFRWIGRpc2NvdmVyeS4uLiIpCiAgICAgICAgCiAgICAgICAgLy8gQ2hlY2sgZm9yIHNpbXVsYXRvcgogICAgICAgICNpZiB0YXJnZXRFbnZpcm9ubWVudChzaW11bGF0b3IpCiAgICAgICAgbG9nKCLinYwgUlVOTklORyBPTiBTSU1VTEFUT1IgLSBOZXR3b3JrIGRpc2NvdmVyeSB3b24ndCB3b3JrISIpCiAgICAgICAgbG9nKCLinYwgUGxlYXNlIHJ1biB0aGlzIGFwcCBvbiBhIFJFQUwgaU9TIERFVklDRSIpCiAgICAgICAgRGlzcGF0Y2hRdWV1ZS5tYWluLmFzeW5jIHsKICAgICAgICAgICAgc2VsZi5uZXR3b3JrRXJyb3IgPSAi4pqg77iPIFNpbXVsYXRvciBEZXRlY3RlZDogTXVsdGljYXN0IG5ldHdvcmtpbmcgZG9lc24ndCB3b3JrIGluIHRoZSBpT1MgU2ltdWxhdG9yLiBQbGVhc2UgdGVzdCBvbiBhIHJlYWwgZGV2aWNlLiIKICAgICAgICAgICAgc2VsZi5pc1NlYXJjaGluZyA9IGZhbHNlCiAgICAgICAgfQogICAgICAgIHJldHVybgogICAgICAgICNlbmRpZgogICAgICAgIGRpc2NvdmVyZWRUVnMucmVtb3ZlQWxsKCkKICAgICAgICBpc1NlYXJjaGluZyA9IHRydWUKICAgICAgICAKICAgICAgICAvLyBDYW5jZWwgYW55IGV4aXN0aW5nIHRpbWVyCiAgICAgICAgZGlzY292ZXJ5VGltZXI/LmNhbmNlbCgpCiAgICAgICAgCiAgICAgICAgLy8gU3RhcnQgbGlzdGVuaW5nIGZvciBTU0RQIHJlc3BvbnNlcwogICAgICAgIHN0YXJ0TGlzdGVuaW5nKCkKICAgICAgICAKICAgICAgICAvLyBTZW5kIGRpc2NvdmVyeSBtZXNzYWdlIGFmdGVyIGEgYnJpZWYgZGVsYXkgdG8gZW5zdXJlIGxpc3RlbmVyIGlzIHJlYWR5CiAgICAgICAgZGlzcGF0Y2hRdWV1ZS5hc3luY0FmdGVyKGRlYWRsaW5lOiAubm93KCkgKyAwLjUpIHsgW3dlYWsgc2VsZl0gaW4KICAgICAgICAgICAgc2VsZj8uc2VuZERpc2NvdmVyeU1lc3NhZ2UoKQogICAgICAgIH0KICAgICAgICAKICAgICAgICAvLyBTdG9wIGRpc2NvdmVyeSBhZnRlciAxMCBzZWNvbmRzIChpbmNyZWFzZWQgZnJvbSA1IGZvciBiZXR0ZXIgZGlzY292ZXJ5KQogICAgICAgIGxldCB3b3JrSXRlbSA9IERpc3BhdGNoV29ya0l0ZW0geyBbd2VhayBzZWxmXSBpbgogICAgICAgICAgICBzZWxmPy5zdG9wRGlzY292ZXJ5KCkKICAgICAgICB9CiAgICAgICAgZGlzY292ZXJ5VGltZXIgPSB3b3JrSXRlbQogICAgICAgIERpc3BhdGNoUXVldWUubWFpbi5hc3luY0FmdGVyKGRlYWRsaW5lOiAubm93KCkgKyAxMCwgZXhlY3V0ZTogd29ya0l0ZW0pCiAgICB9CiAgICAKICAgIHByaXZhdGUgZnVuYyBzdGFydExpc3RlbmluZygpIHsKICAgICAgICBkbyB7CiAgICAgICAgICAgIC8vIENyZWF0ZSBVRFAgbGlzdGVuZXIKICAgICAgICAgICAgbGV0IHBhcmFtcyA9IE5XUGFyYW1ldGVycy51ZHAKICAgICAgICAgICAgcGFyYW1zLmFsbG93TG9jYWxFbmRwb2ludFJldXNlID0gdHJ1ZQogICAgICAgICAgICBwYXJhbXMuYWNjZXB0TG9jYWxPbmx5ID0gZmFsc2UKICAgICAgICAgICAgCiAgICAgICAgICAgIGxpc3RlbmVyID0gdHJ5IE5XTGlzdGVuZXIodXNpbmc6IHBhcmFtcywgb246IE5XRW5kcG9pbnQuUG9ydChyYXdWYWx1ZTogc3NkcFBvcnQpISkKICAgICAgICAgICAgCiAgICAgICAgICAgIGxpc3RlbmVyPy5zdGF0ZVVwZGF0ZUhhbmRsZXIgPSB7IFt3ZWFrIHNlbGZdIHN0YXRlIGluCiAgICAgICAgICAgICAgICBzZWxmPy5sb2coIvCfkYIgTGlzdGVuZXIgc3RhdGU6IFwoc3RhdGUpIikKICAgICAgICAgICAgICAgIHN3aXRjaCBzdGF0ZSB7CiAgICAgICAgICAgICAgICBjYXNlIC5yZWFkeToKICAgICAgICAgICAgICAgICAgICBzZWxmPy5sb2coIuKchSBMaXN0ZW5lciByZWFkeSBvbiBwb3J0IFwoc2VsZj8uc3NkcFBvcnQgPz8gMCkiKQogICAgICAgICAgICAgICAgY2FzZSAuZmFpbGVkKGxldCBlcnJvcik6CiAgICAgICAgICAgICAgICAgICAgc2VsZj8ubG9nKCLinYwgTGlzdGVuZXIgZmFpbGVkOiBcKGVycm9yLmxvY2FsaXplZERlc2NyaXB0aW9uKSIpCiAgICAgICAgICAgICAgICAgICAgRGlzcGF0Y2hRdWV1ZS5tYWluLmFzeW5jIHsKICAgICAgICAgICAgICAgICAgICAgICAgc2VsZj8uaXNTZWFyY2hpbmcgPSBmYWxzZQogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIGNhc2UgLmNhbmNlbGxlZDoKICAgICAgICAgICAgICAgICAgICBzZWxmPy5sb2coIvCfm5EgTGlzdGVuZXIgY2FuY2VsbGVkIikKICAgICAgICAgICAgICAgIGRlZmF1bHQ6CiAgICAgICAgICAgICAgICAgICAgYnJlYWsKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgbGlzdGVuZXI/Lm5ld0Nvbm5lY3Rpb25IYW5kbGVyID0geyBbd2VhayBzZWxmXSBjb25uZWN0aW9uIGluCiAgICAgICAgICAgICAgICBzZWxmPy5sb2coIvCfk6ggTmV3IGNvbm5lY3Rpb24gcmVjZWl2ZWQiKQogICAgICAgICAgICAgICAgc2VsZj8uaGFuZGxlQ29ubmVjdGlvbihjb25uZWN0aW9uKQogICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICBsaXN0ZW5lcj8uc3RhcnQocXVldWU6IGRpc3BhdGNoUXVldWUpCiAgICAgICAgICAgIGxvZygi8J+RgiBMaXN0ZW5lciBzdGFydGVkIHN1Y2Nlc3NmdWxseSIpCiAgICAgICAgICAgIAogICAgICAgIH0gY2F0Y2ggewogICAgICAgICAgICBsb2coIuKdjCBGYWlsZWQgdG8gY3JlYXRlIGxpc3RlbmVyOiBcKGVycm9yLmxvY2FsaXplZERlc2NyaXB0aW9uKSIpCiAgICAgICAgICAgIERpc3BhdGNoUXVldWUubWFpbi5hc3luYyB7CiAgICAgICAgICAgICAgICBzZWxmLmlzU2VhcmNoaW5nID0gZmFsc2UKICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KICAgIAogICAgCiAgICBwcml2YXRlIGZ1bmMgaGFuZGxlQ29ubmVjdGlvbihfIGNvbm5lY3Rpb246IE5XQ29ubmVjdGlvbikgewogICAgICAgIGNvbm5lY3Rpb24uc3RhcnQocXVldWU6IGRpc3BhdGNoUXVldWUpCiAgICAgICAgcmVjZWl2ZURhdGEob246IGNvbm5lY3Rpb24pCiAgICB9CiAgICAKICAgIHByaXZhdGUgZnVuYyByZWNlaXZlRGF0YShvbiBjb25uZWN0aW9uOiBOV0Nvbm5lY3Rpb24pIHsKICAgICAgICBjb25uZWN0aW9uLnJlY2VpdmVNZXNzYWdlIHsgW3dlYWsgc2VsZl0gZGF0YSwgY29udGV4dCwgaXNDb21wbGV0ZSwgZXJyb3IgaW4KICAgICAgICAgICAgaWYgbGV0IGVycm9yID0gZXJyb3IgewogICAgICAgICAgICAgICAgc2VsZj8ubG9nKCLinYwgUmVjZWl2ZSBlcnJvcjogXChlcnJvci5sb2NhbGl6ZWREZXNjcmlwdGlvbikiKQogICAgICAgICAgICAgICAgcmV0dXJuCiAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgIGlmIGxldCBkYXRhID0gZGF0YSwgbGV0IHJlc3BvbnNlID0gU3RyaW5nKGRhdGE6IGRhdGEsIGVuY29kaW5nOiAudXRmOCkgewogICAgICAgICAgICAgICAgc2VsZj8ubG9nKCLwn5OpIFJlY2VpdmVkIHJlc3BvbnNlIChcKGRhdGEuY291bnQpIGJ5dGVzKSIpCiAgICAgICAgICAgICAgICBzZWxmPy5wYXJzZURpc2NvdmVyeVJlc3BvbnNlKHJlc3BvbnNlKQogICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICAvLyBDb250aW51ZSByZWNlaXZpbmcKICAgICAgICAgICAgaWYgIWlzQ29tcGxldGUgewogICAgICAgICAgICAgICAgc2VsZj8ucmVjZWl2ZURhdGEob246IGNvbm5lY3Rpb24pCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9CiAgICAKICAgIGZ1bmMgc3RvcERpc2NvdmVyeSgpIHsKICAgICAgICBsb2coIvCfm5EgU3RvcHBpbmcgZGlzY292ZXJ5Li4uIikKICAgICAgICBkaXNjb3ZlcnlUaW1lcj8uY2FuY2VsKCkKICAgICAgICBsaXN0ZW5lcj8uY2FuY2VsKCkKICAgICAgICBsaXN0ZW5lciA9IG5pbAogICAgICAgIHNlbmRDb25uZWN0aW9uPy5jYW5jZWwoKQogICAgICAgIHNlbmRDb25uZWN0aW9uID0gbmlsCiAgICAgICAgCiAgICAgICAgRGlzcGF0Y2hRdWV1ZS5tYWluLmFzeW5jIHsKICAgICAgICAgICAgc2VsZi5pc1NlYXJjaGluZyA9IGZhbHNlCiAgICAgICAgICAgIHNlbGYubG9nKCLinIUgRGlzY292ZXJ5IHN0b3BwZWQuIEZvdW5kIFwoc2VsZi5kaXNjb3ZlcmVkVFZzLmNvdW50KSBUVihzKSIpCiAgICAgICAgfQogICAgfQogICAgCiAgICBwcml2YXRlIGZ1bmMgc2VuZERpc2NvdmVyeU1lc3NhZ2UoKSB7CiAgICAgICAgbG9nKCLwn5OkIFByZXBhcmluZyB0byBzZW5kIGRpc2NvdmVyeSBtZXNzYWdlLi4uIikKICAgICAgICAKICAgICAgICAvLyBDcmVhdGUgYSBzZXBhcmF0ZSBjb25uZWN0aW9uIGZvciBzZW5kaW5nCiAgICAgICAgbGV0IGhvc3QgPSBOV0VuZHBvaW50Lkhvc3Qoc3NkcEFkZHJlc3MpCiAgICAgICAgbGV0IHBvcnQgPSBOV0VuZHBvaW50LlBvcnQocmF3VmFsdWU6IHNzZHBQb3J0KSEKICAgICAgICAKICAgICAgICBsZXQgcGFyYW1zID0gTldQYXJhbWV0ZXJzLnVkcAogICAgICAgIHBhcmFtcy5hbGxvd0xvY2FsRW5kcG9pbnRSZXVzZSA9IHRydWUKICAgICAgICAKICAgICAgICBzZW5kQ29ubmVjdGlvbiA9IE5XQ29ubmVjdGlvbihob3N0OiBob3N0LCBwb3J0OiBwb3J0LCB1c2luZzogcGFyYW1zKQogICAgICAgIAogICAgICAgIHNlbmRDb25uZWN0aW9uPy5zdGF0ZVVwZGF0ZUhhbmRsZXIgPSB7IFt3ZWFrIHNlbGZdIHN0YXRlIGluCiAgICAgICAgICAgIHNlbGY/LmxvZygi8J+ToSBTZW5kIGNvbm5lY3Rpb24gc3RhdGU6IFwoc3RhdGUpIikKICAgICAgICAgICAgc3dpdGNoIHN0YXRlIHsKICAgICAgICAgICAgY2FzZSAucmVhZHk6CiAgICAgICAgICAgICAgICBzZWxmPy5sb2coIuKchSBTZW5kIGNvbm5lY3Rpb24gcmVhZHksIHNlbmRpbmcgTS1TRUFSQ0guLi4iKQogICAgICAgICAgICAgICAgc2VsZj8ucGVyZm9ybVNlbmQoKQogICAgICAgICAgICBjYXNlIC5mYWlsZWQobGV0IGVycm9yKToKICAgICAgICAgICAgICAgIHNlbGY/LmxvZygi4p2MIFNlbmQgY29ubmVjdGlvbiBmYWlsZWQ6IFwoZXJyb3IubG9jYWxpemVkRGVzY3JpcHRpb24pIikKICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgLy8gQ2hlY2sgZm9yIHNwZWNpZmljIGVycm9ycwogICAgICAgICAgICAgICAgaWYgbGV0IHBvc2l4RXJyb3IgPSBlcnJvciBhcz8gUE9TSVhFcnJvciB7CiAgICAgICAgICAgICAgICAgICAgaWYgcG9zaXhFcnJvci5jb2RlID09IC5FTkVURE9XTiB7CiAgICAgICAgICAgICAgICAgICAgICAgIHNlbGY/LmxvZygi4p2MIEVSUk9SOiBOZXR3b3JrIGlzIGRvd24hIikKICAgICAgICAgICAgICAgICAgICAgICAgc2VsZj8ubG9nKCLwn5KhIFNPTFVUSU9OOiBDaGVjayB0aGVzZToiKQogICAgICAgICAgICAgICAgICAgICAgICBzZWxmPy5sb2coIiAgIDEuIEFyZSB5b3UgcnVubmluZyBvbiBhIFJFQUwgZGV2aWNlIChub3Qgc2ltdWxhdG9yKT8iKQogICAgICAgICAgICAgICAgICAgICAgICBzZWxmPy5sb2coIiAgIDIuIElzIFdpRmkgZW5hYmxlZCBhbmQgY29ubmVjdGVkPyIpCiAgICAgICAgICAgICAgICAgICAgICAgIHNlbGY/LmxvZygiICAgMy4gRGlkIHlvdSBncmFudCBMb2NhbCBOZXR3b3JrIHBlcm1pc3Npb24/IikKICAgICAgICAgICAgICAgICAgICAgICAgc2VsZj8ubG9nKCIgICA0LiBBcmUgeW91IG9uIHRoZSBzYW1lIFdpRmkgYXMgeW91ciBUVj8iKQogICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgRGlzcGF0Y2hRdWV1ZS5tYWluLmFzeW5jIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNlbGY/Lm5ldHdvcmtFcnJvciA9ICJOZXR3b3JrIEVycm9yOiBQbGVhc2UgY2hlY2sgV2lGaSBjb25uZWN0aW9uIGFuZCBwZXJtaXNzaW9ucyIKICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgY2FzZSAud2FpdGluZyhsZXQgZXJyb3IpOgogICAgICAgICAgICAgICAgLy8gT25seSBsb2cgcGVyc2lzdGVudCBuZXR3b3JrIGRvd24gZXJyb3JzIG9uY2UKICAgICAgICAgICAgICAgIGlmIGxldCBwb3NpeEVycm9yID0gZXJyb3IgYXM/IFBPU0lYRXJyb3IsIHBvc2l4RXJyb3IuY29kZSA9PSAuRU5FVERPV04gewogICAgICAgICAgICAgICAgICAgIC8vIERvbid0IHNwYW0gbG9ncyB3aXRoIHJlcGVhdGVkICJuZXR3b3JrIGRvd24iIG1lc3NhZ2VzCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIGRlZmF1bHQ6CiAgICAgICAgICAgICAgICBicmVhawogICAgICAgICAgICB9CiAgICAgICAgfQogICAgICAgIAogICAgICAgIHNlbmRDb25uZWN0aW9uPy5zdGFydChxdWV1ZTogZGlzcGF0Y2hRdWV1ZSkKICAgIH0KICAgIAogICAgcHJpdmF0ZSBmdW5jIHBlcmZvcm1TZW5kKCkgewogICAgICAgIC8vIFRyeSBtdWx0aXBsZSBzZWFyY2ggdGFyZ2V0cyBmb3IgYmV0dGVyIGNvbXBhdGliaWxpdHkKICAgICAgICBsZXQgc2VhcmNoVGFyZ2V0cyA9IFsKICAgICAgICAgICAgInVybjpzYW1zdW5nLmNvbTpkZXZpY2U6UmVtb3RlQ29udHJvbFJlY2VpdmVyOjEiLAogICAgICAgICAgICAic3NkcDphbGwiLAogICAgICAgICAgICAidXBucDpyb290ZGV2aWNlIgogICAgICAgIF0KICAgICAgICAKICAgICAgICBmb3IgKGluZGV4LCB0YXJnZXQpIGluIHNlYXJjaFRhcmdldHMuZW51bWVyYXRlZCgpIHsKICAgICAgICAgICAgLy8gRGVsYXkgZWFjaCBzZW5kIHNsaWdodGx5IHRvIGF2b2lkIG92ZXJ3aGVsbWluZyB0aGUgbmV0d29yawogICAgICAgICAgICBkaXNwYXRjaFF1ZXVlLmFzeW5jQWZ0ZXIoZGVhZGxpbmU6IC5ub3coKSArIERvdWJsZShpbmRleCkgKiAwLjMpIHsgW3dlYWsgc2VsZl0gaW4KICAgICAgICAgICAgICAgIHNlbGY/LnNlbmRNU2VhcmNoKHRhcmdldDogdGFyZ2V0KQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQogICAgCiAgICBwcml2YXRlIGZ1bmMgc2VuZE1TZWFyY2godGFyZ2V0OiBTdHJpbmcpIHsKICAgICAgICAvLyBQcm9wZXIgU1NEUCBNLVNFQVJDSCBmb3JtYXQKICAgICAgICBsZXQgbWVzc2FnZSA9ICJNLVNFQVJDSCAqIEhUVFAvMS4xXHJcbiIgKwogICAgICAgICAgICAgICAgICAgICAiSE9TVDogXChzc2RwQWRkcmVzcyk6XChzc2RwUG9ydClcclxuIiArCiAgICAgICAgICAgICAgICAgICAgICJNQU46IFwic3NkcDpkaXNjb3ZlclwiXHJcbiIgKwogICAgICAgICAgICAgICAgICAgICAiTVg6IDVcclxuIiArCiAgICAgICAgICAgICAgICAgICAgICJTVDogXCh0YXJnZXQpXHJcbiIgKwogICAgICAgICAgICAgICAgICAgICAiVVNFUi1BR0VOVDogaU9TL1woVUlEZXZpY2UuY3VycmVudC5zeXN0ZW1WZXJzaW9uKSBVUG5QLzEuMVxyXG4iICsKICAgICAgICAgICAgICAgICAgICAgIlxyXG4iCiAgICAgICAgCiAgICAgICAgZ3VhcmQgbGV0IGRhdGEgPSBtZXNzYWdlLmRhdGEodXNpbmc6IC51dGY4KSBlbHNlIHsKICAgICAgICAgICAgbG9nKCLinYwgRmFpbGVkIHRvIGVuY29kZSBtZXNzYWdlIikKICAgICAgICAgICAgcmV0dXJuCiAgICAgICAgfQogICAgICAgIAogICAgICAgIGxvZygi8J+TpCBTZW5kaW5nIE0tU0VBUkNIIGZvciBcKHRhcmdldCkgKFwoZGF0YS5jb3VudCkgYnl0ZXMpIikKICAgICAgICAKICAgICAgICBzZW5kQ29ubmVjdGlvbj8uc2VuZChjb250ZW50OiBkYXRhLCBjb21wbGV0aW9uOiAuY29udGVudFByb2Nlc3NlZCB7IFt3ZWFrIHNlbGZdIGVycm9yIGluCiAgICAgICAgICAgIGlmIGxldCBlcnJvciA9IGVycm9yIHsKICAgICAgICAgICAgICAgIHNlbGY/LmxvZygi4p2MIFNlbmQgZmFpbGVkOiBcKGVycm9yLmxvY2FsaXplZERlc2NyaXB0aW9uKSIpCiAgICAgICAgICAgIH0gZWxzZSB7CiAgICAgICAgICAgICAgICBzZWxmPy5sb2coIuKchSBNLVNFQVJDSCBzZW50IHN1Y2Nlc3NmdWxseSBmb3IgXCh0YXJnZXQpIikKICAgICAgICAgICAgfQogICAgICAgIH0pCiAgICB9CiAgICAKICAgIHByaXZhdGUgZnVuYyBwYXJzZURpc2NvdmVyeVJlc3BvbnNlKF8gcmVzcG9uc2U6IFN0cmluZykgewogICAgICAgIGxvZygi8J+UjSBQYXJzaW5nIHJlc3BvbnNlLi4uIikKICAgICAgICBsb2coIlJlc3BvbnNlIHByZXZpZXc6IFwocmVzcG9uc2UucHJlZml4KDIwMCkpLi4uIikKICAgICAgICAKICAgICAgICAvLyBQYXJzZSBIVFRQIHJlc3BvbnNlIGhlYWRlcnMKICAgICAgICBsZXQgbGluZXMgPSByZXNwb25zZS5jb21wb25lbnRzKHNlcGFyYXRlZEJ5OiAiXHJcbiIpCiAgICAgICAgdmFyIGxvY2F0aW9uOiBTdHJpbmc/CiAgICAgICAgdmFyIHNlcnZlcjogU3RyaW5nPwogICAgICAgIAogICAgICAgIGZvciBsaW5lIGluIGxpbmVzIHsKICAgICAgICAgICAgbGV0IGxvd2VyY2FzZWQgPSBsaW5lLmxvd2VyY2FzZWQoKQogICAgICAgICAgICBpZiBsb3dlcmNhc2VkLmhhc1ByZWZpeCgibG9jYXRpb246IikgewogICAgICAgICAgICAgICAgbG9jYXRpb24gPSBsaW5lLmNvbXBvbmVudHMoc2VwYXJhdGVkQnk6ICI6IikuZHJvcEZpcnN0KCkuam9pbmVkKHNlcGFyYXRvcjogIjoiKS50cmltbWluZ0NoYXJhY3RlcnMoaW46IC53aGl0ZXNwYWNlcykKICAgICAgICAgICAgICAgIGxvZygi8J+TjSBGb3VuZCBsb2NhdGlvbjogXChsb2NhdGlvbiA/PyAibmlsIikiKQogICAgICAgICAgICB9IGVsc2UgaWYgbG93ZXJjYXNlZC5oYXNQcmVmaXgoInNlcnZlcjoiKSB7CiAgICAgICAgICAgICAgICBzZXJ2ZXIgPSBsaW5lLmNvbXBvbmVudHMoc2VwYXJhdGVkQnk6ICI6IikuZHJvcEZpcnN0KCkuam9pbmVkKHNlcGFyYXRvcjogIjoiKS50cmltbWluZ0NoYXJhY3RlcnMoaW46IC53aGl0ZXNwYWNlcykKICAgICAgICAgICAgICAgIGxvZygi8J+Wpe+4jyBTZXJ2ZXI6IFwoc2VydmVyID8/ICJuaWwiKSIpCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICAgICAgCiAgICAgICAgZ3VhcmQgbGV0IGxvY2F0aW9uVVJMID0gbG9jYXRpb24sCiAgICAgICAgICAgICAgbGV0IHVybCA9IFVSTChzdHJpbmc6IGxvY2F0aW9uVVJMKSwKICAgICAgICAgICAgICBsZXQgaG9zdCA9IHVybC5ob3N0IGVsc2UgewogICAgICAgICAgICBsb2coIuKaoO+4jyBDb3VsZCBub3QgZXh0cmFjdCBob3N0IGZyb20gbG9jYXRpb24iKQogICAgICAgICAgICByZXR1cm4KICAgICAgICB9CiAgICAgICAgCiAgICAgICAgbG9nKCLinIUgVmFsaWQgZGV2aWNlIGZvdW5kIGF0IFwoaG9zdCkiKQogICAgICAgIAogICAgICAgIC8vIEZldGNoIGRldmljZSBkZXNjcmlwdGlvbgogICAgICAgIGZldGNoRGV2aWNlRGVzY3JpcHRpb24oZnJvbTogbG9jYXRpb25VUkwsIGlwOiBob3N0KQogICAgfQogICAgCiAgICBwcml2YXRlIGZ1bmMgZmV0Y2hEZXZpY2VEZXNjcmlwdGlvbihmcm9tIHVybFN0cmluZzogU3RyaW5nLCBpcDogU3RyaW5nKSB7CiAgICAgICAgbG9nKCLwn5OlIEZldGNoaW5nIGRldmljZSBkZXNjcmlwdGlvbiBmcm9tIFwodXJsU3RyaW5nKSIpCiAgICAgICAgCiAgICAgICAgZ3VhcmQgbGV0IHVybCA9IFVSTChzdHJpbmc6IHVybFN0cmluZykgZWxzZSB7CiAgICAgICAgICAgIGxvZygi4p2MIEludmFsaWQgVVJMOiBcKHVybFN0cmluZykiKQogICAgICAgICAgICByZXR1cm4KICAgICAgICB9CiAgICAgICAgCiAgICAgICAgdmFyIHJlcXVlc3QgPSBVUkxSZXF1ZXN0KHVybDogdXJsKQogICAgICAgIHJlcXVlc3QudGltZW91dEludGVydmFsID0gNS4wCiAgICAgICAgCiAgICAgICAgVVJMU2Vzc2lvbi5zaGFyZWQuZGF0YVRhc2sod2l0aDogcmVxdWVzdCkgeyBbd2VhayBzZWxmXSBkYXRhLCByZXNwb25zZSwgZXJyb3IgaW4KICAgICAgICAgICAgaWYgbGV0IGVycm9yID0gZXJyb3IgewogICAgICAgICAgICAgICAgc2VsZj8ubG9nKCLinYwgRmFpbGVkIHRvIGZldGNoIGRldmljZSBkZXNjcmlwdGlvbjogXChlcnJvci5sb2NhbGl6ZWREZXNjcmlwdGlvbikiKQogICAgICAgICAgICAgICAgcmV0dXJuCiAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgIGd1YXJkIGxldCBkYXRhID0gZGF0YSBlbHNlIHsKICAgICAgICAgICAgICAgIHNlbGY/LmxvZygi4p2MIE5vIGRhdGEgcmVjZWl2ZWQgZnJvbSBkZXZpY2UiKQogICAgICAgICAgICAgICAgcmV0dXJuCiAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgIGd1YXJkIGxldCB4bWwgPSBTdHJpbmcoZGF0YTogZGF0YSwgZW5jb2Rpbmc6IC51dGY4KSBlbHNlIHsKICAgICAgICAgICAgICAgIHNlbGY/LmxvZygi4p2MIENvdWxkIG5vdCBkZWNvZGUgWE1MIikKICAgICAgICAgICAgICAgIHJldHVybgogICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICBzZWxmPy5sb2coIvCfk4QgUmVjZWl2ZWQgWE1MIChcKHhtbC5jb3VudCkgY2hhcmFjdGVycykiKQogICAgICAgICAgICAKICAgICAgICAgICAgLy8gUGFyc2UgWE1MIGZvciBkZXZpY2UgaW5mbwogICAgICAgICAgICBsZXQgbmFtZSA9IHNlbGY/LmV4dHJhY3RYTUxWYWx1ZShmcm9tOiB4bWwsIHRhZzogImZyaWVuZGx5TmFtZSIpID8/ICJTYW1zdW5nIFRWIgogICAgICAgICAgICBsZXQgbW9kZWwgPSBzZWxmPy5leHRyYWN0WE1MVmFsdWUoZnJvbTogeG1sLCB0YWc6ICJtb2RlbE5hbWUiKQogICAgICAgICAgICBsZXQgbWFudWZhY3R1cmVyID0gc2VsZj8uZXh0cmFjdFhNTFZhbHVlKGZyb206IHhtbCwgdGFnOiAibWFudWZhY3R1cmVyIikKICAgICAgICAgICAgCiAgICAgICAgICAgIHNlbGY/LmxvZygi8J+TuiBEZXZpY2UgaW5mbzogXChuYW1lKSB8IFwobW9kZWwgPz8gInVua25vd24iKSB8IFwobWFudWZhY3R1cmVyID8/ICJ1bmtub3duIikiKQogICAgICAgICAgICAKICAgICAgICAgICAgLy8gQ2hlY2sgaWYgaXQncyBhIFNhbXN1bmcgZGV2aWNlCiAgICAgICAgICAgIGxldCBpc1NhbXN1bmcgPSBtYW51ZmFjdHVyZXI/Lmxvd2VyY2FzZWQoKS5jb250YWlucygic2Ftc3VuZyIpID8/IAogICAgICAgICAgICAgICAgICAgICAgICAgICBtb2RlbD8ubG93ZXJjYXNlZCgpLmNvbnRhaW5zKCJzYW1zdW5nIikgPz8gCiAgICAgICAgICAgICAgICAgICAgICAgICAgIG5hbWUubG93ZXJjYXNlZCgpLmNvbnRhaW5zKCJzYW1zdW5nIikKICAgICAgICAgICAgCiAgICAgICAgICAgIGlmICFpc1NhbXN1bmcgewogICAgICAgICAgICAgICAgc2VsZj8ubG9nKCLimqDvuI8gRGV2aWNlIGlzIG5vdCBhIFNhbXN1bmcgVFYsIHNraXBwaW5nIikKICAgICAgICAgICAgICAgIHJldHVybgogICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICBsZXQgdHYgPSBEaXNjb3ZlcmVkVFYoCiAgICAgICAgICAgICAgICBuYW1lOiBuYW1lLAogICAgICAgICAgICAgICAgaXA6IGlwLAogICAgICAgICAgICAgICAgbW9kZWw6IG1vZGVsLAogICAgICAgICAgICAgICAgcG9ydDogODAwMgogICAgICAgICAgICApCiAgICAgICAgICAgIAogICAgICAgICAgICBEaXNwYXRjaFF1ZXVlLm1haW4uYXN5bmMgewogICAgICAgICAgICAgICAgLy8gQWRkIGlmIG5vdCBhbHJlYWR5IGluIGxpc3QKICAgICAgICAgICAgICAgIGlmICEoc2VsZj8uZGlzY292ZXJlZFRWcy5jb250YWlucyh3aGVyZTogeyAkMC5pcCA9PSB0di5pcCB9KSA/PyBmYWxzZSkgewogICAgICAgICAgICAgICAgICAgIHNlbGY/LmRpc2NvdmVyZWRUVnMuYXBwZW5kKHR2KQogICAgICAgICAgICAgICAgICAgIHNlbGY/LmxvZygi4pyFIEFkZGVkIFRWIHRvIGxpc3Q6IFwodHYubmFtZSkgYXQgXCh0di5pcCkiKQogICAgICAgICAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgICAgICAgICBzZWxmPy5sb2coIuKEue+4jyBUViBhbHJlYWR5IGluIGxpc3Q6IFwodHYuaXApIikKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgIH0ucmVzdW1lKCkKICAgIH0KICAgIAogICAgcHJpdmF0ZSBmdW5jIGV4dHJhY3RYTUxWYWx1ZShmcm9tIHhtbDogU3RyaW5nLCB0YWc6IFN0cmluZykgLT4gU3RyaW5nPyB7CiAgICAgICAgbGV0IHBhdHRlcm4gPSAiPFwodGFnKT4oLio/KTwvXCh0YWcpPiIKICAgICAgICBndWFyZCBsZXQgcmVnZXggPSB0cnk/IE5TUmVndWxhckV4cHJlc3Npb24ocGF0dGVybjogcGF0dGVybiksCiAgICAgICAgICAgICAgbGV0IG1hdGNoID0gcmVnZXguZmlyc3RNYXRjaChpbjogeG1sLCByYW5nZTogTlNSYW5nZSh4bWwuc3RhcnRJbmRleC4uLiwgaW46IHhtbCkpLAogICAgICAgICAgICAgIGxldCByYW5nZSA9IFJhbmdlKG1hdGNoLnJhbmdlKGF0OiAxKSwgaW46IHhtbCkgZWxzZSB7CiAgICAgICAgICAgIHJldHVybiBuaWwKICAgICAgICB9CiAgICAgICAgCiAgICAgICAgcmV0dXJuIFN0cmluZyh4bWxbcmFuZ2VdKQogICAgfQogICAgCiAgICAvLyBNQVJLOiAtIERlYnVnIExvZ2dpbmcKICAgIAogICAgcHJpdmF0ZSBmdW5jIGxvZyhfIG1lc3NhZ2U6IFN0cmluZykgewogICAgICAgIGxldCB0aW1lc3RhbXAgPSBEYXRlRm9ybWF0dGVyLmxvY2FsaXplZFN0cmluZyhmcm9tOiBEYXRlKCksIGRhdGVTdHlsZTogLm5vbmUsIHRpbWVTdHlsZTogLm1lZGl1bSkKICAgICAgICBsZXQgbG9nTWVzc2FnZSA9ICJbXCh0aW1lc3RhbXApXSBcKG1lc3NhZ2UpIgogICAgICAgIHByaW50KGxvZ01lc3NhZ2UpCiAgICAgICAgCiAgICAgICAgRGlzcGF0Y2hRdWV1ZS5tYWluLmFzeW5jIHsKICAgICAgICAgICAgc2VsZi5kZWJ1Z0xvZy5hcHBlbmQobG9nTWVzc2FnZSkKICAgICAgICAgICAgLy8gS2VlcCBvbmx5IGxhc3QgMTAwIGxvZyBlbnRyaWVzCiAgICAgICAgICAgIGlmIHNlbGYuZGVidWdMb2cuY291bnQgPiAxMDAgewogICAgICAgICAgICAgICAgc2VsZi5kZWJ1Z0xvZy5yZW1vdmVGaXJzdCgpCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9CiAgICAKICAgIGZ1bmMgY2xlYXJMb2coKSB7CiAgICAgICAgZGVidWdMb2cucmVtb3ZlQWxsKCkKICAgIH0KICAgIAogICAgLy8gTUFSSzogLSBNYW51YWwgRW50cnkKICAgIAogICAgLy8gTWFudWFsIElQIGVudHJ5IGZhbGxiYWNrCiAgICBmdW5jIGFkZE1hbnVhbFRWKGlwOiBTdHJpbmcsIG5hbWU6IFN0cmluZyA9ICJTYW1zdW5nIFRWIikgewogICAgICAgIGxvZygi4p6VIE1hbnVhbGx5IGFkZGluZyBUVjogXChuYW1lKSBhdCBcKGlwKSIpCiAgICAgICAgCiAgICAgICAgbGV0IHR2ID0gRGlzY292ZXJlZFRWKAogICAgICAgICAgICBuYW1lOiBuYW1lLAogICAgICAgICAgICBpcDogaXAsCiAgICAgICAgICAgIG1vZGVsOiBuaWwsCiAgICAgICAgICAgIHBvcnQ6IDgwMDIKICAgICAgICApCiAgICAgICAgCiAgICAgICAgaWYgIWRpc2NvdmVyZWRUVnMuY29udGFpbnMod2hlcmU6IHsgJDAuaXAgPT0gdHYuaXAgfSkgewogICAgICAgICAgICBkaXNjb3ZlcmVkVFZzLmFwcGVuZCh0dikKICAgICAgICAgICAgbG9nKCLinIUgTWFudWFsIFRWIGFkZGVkIHN1Y2Nlc3NmdWxseSIpCiAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgbG9nKCLihLnvuI8gVFYgd2l0aCB0aGlzIElQIGFscmVhZHkgZXhpc3RzIikKICAgICAgICB9CiAgICAgICAgCiAgICAgICAgLy8gQWxzbyBzYXZlIHRvIHBlcnNpc3RlbnQgc3RvcmFnZQogICAgICAgIHNhdmVUVih0dikKICAgIH0KICAgIAogICAgLy8gTUFSSzogLSBTYXZlZCBUVnMgTWFuYWdlbWVudAogICAgCiAgICBwcml2YXRlIGZ1bmMgbG9hZFNhdmVkVFZzKCkgewogICAgICAgIGd1YXJkIGxldCBkYXRhID0gVXNlckRlZmF1bHRzLnN0YW5kYXJkLmRhdGEoZm9yS2V5OiBzYXZlZFRWc0tleSksCiAgICAgICAgICAgICAgbGV0IHR2cyA9IHRyeT8gSlNPTkRlY29kZXIoKS5kZWNvZGUoW0Rpc2NvdmVyZWRUVl0uc2VsZiwgZnJvbTogZGF0YSkgZWxzZSB7CiAgICAgICAgICAgIHJldHVybgogICAgICAgIH0KICAgICAgICBzYXZlZFRWcyA9IHR2cwogICAgICAgIGxvZygi8J+TgiBMb2FkZWQgXCh0dnMuY291bnQpIHNhdmVkIFRWKHMpIikKICAgIH0KICAgIAogICAgZnVuYyBzYXZlVFYoXyB0djogRGlzY292ZXJlZFRWKSB7CiAgICAgICAgLy8gUmVtb3ZlIGlmIGFscmVhZHkgZXhpc3RzIChieSBJUCkKICAgICAgICBzYXZlZFRWcy5yZW1vdmVBbGwod2hlcmU6IHsgJDAuaXAgPT0gdHYuaXAgfSkKICAgICAgICAKICAgICAgICAvLyBBZGQgdG8gYmVnaW5uaW5nCiAgICAgICAgc2F2ZWRUVnMuaW5zZXJ0KHR2LCBhdDogMCkKICAgICAgICAKICAgICAgICAvLyBQZXJzaXN0IHRvIFVzZXJEZWZhdWx0cwogICAgICAgIGlmIGxldCBkYXRhID0gdHJ5PyBKU09ORW5jb2RlcigpLmVuY29kZShzYXZlZFRWcykgewogICAgICAgICAgICBVc2VyRGVmYXVsdHMuc3RhbmRhcmQuc2V0KGRhdGEsIGZvcktleTogc2F2ZWRUVnNLZXkpCiAgICAgICAgICAgIGxvZygi8J+SviBTYXZlZCBUVjogXCh0di5uYW1lKSBhdCBcKHR2LmlwKSIpCiAgICAgICAgfQogICAgfQogICAgCiAgICBmdW5jIHJlbW92ZVNhdmVkVFYoXyB0djogRGlzY292ZXJlZFRWKSB7CiAgICAgICAgc2F2ZWRUVnMucmVtb3ZlQWxsKHdoZXJlOiB7ICQwLmlkID09IHR2LmlkIH0pCiAgICAgICAgCiAgICAgICAgaWYgbGV0IGRhdGEgPSB0cnk/IEpTT05FbmNvZGVyKCkuZW5jb2RlKHNhdmVkVFZzKSB7CiAgICAgICAgICAgIFVzZXJEZWZhdWx0cy5zdGFuZGFyZC5zZXQoZGF0YSwgZm9yS2V5OiBzYXZlZFRWc0tleSkKICAgICAgICAgICAgbG9nKCLwn5eR77iPIFJlbW92ZWQgc2F2ZWQgVFY6IFwodHYubmFtZSkiKQogICAgICAgIH0KICAgIH0KICAgIAogICAgZnVuYyBjbGVhclNhdmVkVFZzKCkgewogICAgICAgIHNhdmVkVFZzLnJlbW92ZUFsbCgpCiAgICAgICAgVXNlckRlZmF1bHRzLnN0YW5kYXJkLnJlbW92ZU9iamVjdChmb3JLZXk6IHNhdmVkVFZzS2V5KQogICAgICAgIGxvZygi8J+Xke+4jyBDbGVhcmVkIGFsbCBzYXZlZCBUVnMiKQogICAgfQp9CmltcG9ydCBVSUtpdCAvLyBOZWVkZWQgZm9yIFVJRGV2aWNlCgo=
+//
+//  TVDiscoveryService.swift
+//  Samsung TV Remote
+//
+//  Service for discovering Samsung TVs on local network using SSDP
+//
+
+import Foundation
+import Network
+import Combine
+
+struct DiscoveredTV: Identifiable, Codable {
+    let id: UUID
+    let name: String
+    let ip: String
+    let model: String?
+    let port: Int
+    
+    init(id: UUID = UUID(), name: String, ip: String, model: String?, port: Int) {
+        self.id = id
+        self.name = name
+        self.ip = ip
+        self.model = model
+        self.port = port
+    }
+}
+
+class TVDiscoveryService: ObservableObject {
+    @Published var discoveredTVs: [DiscoveredTV] = []
+    @Published var savedTVs: [DiscoveredTV] = []
+    @Published var isSearching = false
+    @Published var debugLog: [String] = []
+    @Published var networkError: String?
+    
+    private var listener: NWListener?
+    private var sendConnection: NWConnection?
+    private let dispatchQueue = DispatchQueue(label: "com.samsungtv.discovery")
+    private var networkMonitor: NWPathMonitor?
+    
+    // SSDP multicast address and port
+    private let ssdpAddress = "239.255.255.250"
+    private let ssdpPort: UInt16 = 1900
+    private var discoveryTimer: DispatchWorkItem?
+    
+    private let savedTVsKey = "saved_tvs"
+    
+    init() {
+        loadSavedTVs()
+        checkNetworkStatus()
+    }
+    
+    private func checkNetworkStatus() {
+        networkMonitor = NWPathMonitor()
+        networkMonitor?.pathUpdateHandler = { [weak self] path in
+            DispatchQueue.main.async {
+                if path.status == .satisfied {
+                    if path.usesInterfaceType(.wifi) {
+                        self?.networkError = nil
+                        self?.log("✅ WiFi connection detected")
+                    } else if path.usesInterfaceType(.cellular) {
+                        self?.networkError = "Must be on WiFi, not cellular data"
+                        self?.log("⚠️ Connected via cellular - WiFi required")
+                    } else {
+                        self?.networkError = "Unknown network type"
+                        self?.log("⚠️ Unknown network interface type")
+                    }
+                } else {
+                    self?.networkError = "No network connection"
+                    self?.log("❌ No network connection available")
+                }
+                
+                #if targetEnvironment(simulator)
+                self?.log("⚠️ Running on SIMULATOR - multicast may not work!")
+                self?.networkError = "Simulator detected - please test on a real device"
+                #endif
+            }
+        }
+        networkMonitor?.start(queue: DispatchQueue.global(qos: .utility))
+    }
+    
+    func startDiscovery() {
+        log("🔍 Starting TV discovery...")
+        
+        // Check for simulator
+        #if targetEnvironment(simulator)
+        log("❌ RUNNING ON SIMULATOR - Network discovery won't work!")
+        log("❌ Please run this app on a REAL iOS DEVICE")
+        DispatchQueue.main.async {
+            self.networkError = "⚠️ Simulator Detected: Multicast networking doesn't work in the iOS Simulator. Please test on a real device."
+            self.isSearching = false
+        }
+        return
+        #endif
+        discoveredTVs.removeAll()
+        isSearching = true
+        
+        // Cancel any existing timer
+        discoveryTimer?.cancel()
+        
+        // Start listening for SSDP responses
+        startListening()
+        
+        // Send discovery message after a brief delay to ensure listener is ready
+        dispatchQueue.asyncAfter(deadline: .now() + 0.5) { [weak self] in
+            self?.sendDiscoveryMessage()
+        }
+        
+        // Stop discovery after 10 seconds (increased from 5 for better discovery)
+        let workItem = DispatchWorkItem { [weak self] in
+            self?.stopDiscovery()
+        }
+        discoveryTimer = workItem
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10, execute: workItem)
+    }
+    
+    private func startListening() {
+        do {
+            // Create UDP listener
+            let params = NWParameters.udp
+            params.allowLocalEndpointReuse = true
+            params.acceptLocalOnly = false
+            
+            listener = try NWListener(using: params, on: NWEndpoint.Port(rawValue: ssdpPort)!)
+            
+            listener?.stateUpdateHandler = { [weak self] state in
+                self?.log("👂 Listener state: \(state)")
+                switch state {
+                case .ready:
+                    self?.log("✅ Listener ready on port \(self?.ssdpPort ?? 0)")
+                case .failed(let error):
+                    self?.log("❌ Listener failed: \(error.localizedDescription)")
+                    DispatchQueue.main.async {
+                        self?.isSearching = false
+                    }
+                case .cancelled:
+                    self?.log("🛑 Listener cancelled")
+                default:
+                    break
+                }
+            }
+            
+            listener?.newConnectionHandler = { [weak self] connection in
+                self?.log("📨 New connection received")
+                self?.handleConnection(connection)
+            }
+            
+            listener?.start(queue: dispatchQueue)
+            log("👂 Listener started successfully")
+            
+        } catch {
+            log("❌ Failed to create listener: \(error.localizedDescription)")
+            DispatchQueue.main.async {
+                self.isSearching = false
+            }
+        }
+    }
+    
+    
+    private func handleConnection(_ connection: NWConnection) {
+        connection.start(queue: dispatchQueue)
+        receiveData(on: connection)
+    }
+    
+    private func receiveData(on connection: NWConnection) {
+        connection.receiveMessage { [weak self] data, context, isComplete, error in
+            if let error = error {
+                self?.log("❌ Receive error: \(error.localizedDescription)")
+                return
+            }
+            
+            if let data = data, let response = String(data: data, encoding: .utf8) {
+                self?.log("📩 Received response (\(data.count) bytes)")
+                self?.parseDiscoveryResponse(response)
+            }
+            
+            // Continue receiving
+            if !isComplete {
+                self?.receiveData(on: connection)
+            }
+        }
+    }
+    
+    func stopDiscovery() {
+        log("🛑 Stopping discovery...")
+        discoveryTimer?.cancel()
+        listener?.cancel()
+        listener = nil
+        sendConnection?.cancel()
+        sendConnection = nil
+        
+        DispatchQueue.main.async {
+            self.isSearching = false
+            self.log("✅ Discovery stopped. Found \(self.discoveredTVs.count) TV(s)")
+        }
+    }
+    
+    private func sendDiscoveryMessage() {
+        log("📤 Preparing to send discovery message...")
+        
+        // Create a separate connection for sending
+        let host = NWEndpoint.Host(ssdpAddress)
+        let port = NWEndpoint.Port(rawValue: ssdpPort)!
+        
+        let params = NWParameters.udp
+        params.allowLocalEndpointReuse = true
+        
+        sendConnection = NWConnection(host: host, port: port, using: params)
+        
+        sendConnection?.stateUpdateHandler = { [weak self] state in
+            self?.log("📡 Send connection state: \(state)")
+            switch state {
+            case .ready:
+                self?.log("✅ Send connection ready, sending M-SEARCH...")
+                self?.performSend()
+            case .failed(let error):
+                self?.log("❌ Send connection failed: \(error.localizedDescription)")
+                
+                // Check for specific errors
+                if let posixError = error as? POSIXError {
+                    if posixError.code == .ENETDOWN {
+                        self?.log("❌ ERROR: Network is down!")
+                        self?.log("💡 SOLUTION: Check these:")
+                        self?.log("   1. Are you running on a REAL device (not simulator)?")
+                        self?.log("   2. Is WiFi enabled and connected?")
+                        self?.log("   3. Did you grant Local Network permission?")
+                        self?.log("   4. Are you on the same WiFi as your TV?")
+                        
+                        DispatchQueue.main.async {
+                            self?.networkError = "Network Error: Please check WiFi connection and permissions"
+                        }
+                    }
+                }
+            case .waiting(let error):
+                // Only log persistent network down errors once
+                if let posixError = error as? POSIXError, posixError.code == .ENETDOWN {
+                    // Don't spam logs with repeated "network down" messages
+                }
+            default:
+                break
+            }
+        }
+        
+        sendConnection?.start(queue: dispatchQueue)
+    }
+    
+    private func performSend() {
+        // Try multiple search targets for better compatibility
+        let searchTargets = [
+            "urn:samsung.com:device:RemoteControlReceiver:1",
+            "ssdp:all",
+            "upnp:rootdevice"
+        ]
+        
+        for (index, target) in searchTargets.enumerated() {
+            // Delay each send slightly to avoid overwhelming the network
+            dispatchQueue.asyncAfter(deadline: .now() + Double(index) * 0.3) { [weak self] in
+                self?.sendMSearch(target: target)
+            }
+        }
+    }
+    
+    private func sendMSearch(target: String) {
+        // Proper SSDP M-SEARCH format
+        let message = "M-SEARCH * HTTP/1.1\r\n" +
+                     "HOST: \(ssdpAddress):\(ssdpPort)\r\n" +
+                     "MAN: \"ssdp:discover\"\r\n" +
+                     "MX: 5\r\n" +
+                     "ST: \(target)\r\n" +
+                     "USER-AGENT: iOS/\(UIDevice.current.systemVersion) UPnP/1.1\r\n" +
+                     "\r\n"
+        
+        guard let data = message.data(using: .utf8) else {
+            log("❌ Failed to encode message")
+            return
+        }
+        
+        log("📤 Sending M-SEARCH for \(target) (\(data.count) bytes)")
+        
+        sendConnection?.send(content: data, completion: .contentProcessed { [weak self] error in
+            if let error = error {
+                self?.log("❌ Send failed: \(error.localizedDescription)")
+            } else {
+                self?.log("✅ M-SEARCH sent successfully for \(target)")
+            }
+        })
+    }
+    
+    private func parseDiscoveryResponse(_ response: String) {
+        log("🔍 Parsing response...")
+        log("Response preview: \(response.prefix(200))...")
+        
+        // Parse HTTP response headers
+        let lines = response.components(separatedBy: "\r\n")
+        var location: String?
+        var server: String?
+        
+        for line in lines {
+            let lowercased = line.lowercased()
+            if lowercased.hasPrefix("location:") {
+                location = line.components(separatedBy: ":").dropFirst().joined(separator: ":").trimmingCharacters(in: .whitespaces)
+                log("📍 Found location: \(location ?? "nil")")
+            } else if lowercased.hasPrefix("server:") {
+                server = line.components(separatedBy: ":").dropFirst().joined(separator: ":").trimmingCharacters(in: .whitespaces)
+                log("🖥️ Server: \(server ?? "nil")")
+            }
+        }
+        
+        guard let locationURL = location,
+              let url = URL(string: locationURL),
+              let host = url.host else {
+            log("⚠️ Could not extract host from location")
+            return
+        }
+        
+        log("✅ Valid device found at \(host)")
+        
+        // Fetch device description
+        fetchDeviceDescription(from: locationURL, ip: host)
+    }
+    
+    private func fetchDeviceDescription(from urlString: String, ip: String) {
+        log("📥 Fetching device description from \(urlString)")
+        
+        guard let url = URL(string: urlString) else {
+            log("❌ Invalid URL: \(urlString)")
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        request.timeoutInterval = 5.0
+        
+        URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
+            if let error = error {
+                self?.log("❌ Failed to fetch device description: \(error.localizedDescription)")
+                return
+            }
+            
+            guard let data = data else {
+                self?.log("❌ No data received from device")
+                return
+            }
+            
+            guard let xml = String(data: data, encoding: .utf8) else {
+                self?.log("❌ Could not decode XML")
+                return
+            }
+            
+            self?.log("📄 Received XML (\(xml.count) characters)")
+            
+            // Parse XML for device info
+            let name = self?.extractXMLValue(from: xml, tag: "friendlyName") ?? "Samsung TV"
+            let model = self?.extractXMLValue(from: xml, tag: "modelName")
+            let manufacturer = self?.extractXMLValue(from: xml, tag: "manufacturer")
+            
+            self?.log("📺 Device info: \(name) | \(model ?? "unknown") | \(manufacturer ?? "unknown")")
+            
+            // Check if it's a Samsung device
+            let isSamsung = manufacturer?.lowercased().contains("samsung") ?? 
+                           model?.lowercased().contains("samsung") ?? 
+                           name.lowercased().contains("samsung")
+            
+            if !isSamsung {
+                self?.log("⚠️ Device is not a Samsung TV, skipping")
+                return
+            }
+            
+            let tv = DiscoveredTV(
+                name: name,
+                ip: ip,
+                model: model,
+                port: 8002
+            )
+            
+            DispatchQueue.main.async {
+                // Add if not already in list
+                if !(self?.discoveredTVs.contains(where: { $0.ip == tv.ip }) ?? false) {
+                    self?.discoveredTVs.append(tv)
+                    self?.log("✅ Added TV to list: \(tv.name) at \(tv.ip)")
+                } else {
+                    self?.log("ℹ️ TV already in list: \(tv.ip)")
+                }
+            }
+        }.resume()
+    }
+    
+    private func extractXMLValue(from xml: String, tag: String) -> String? {
+        let pattern = "<\(tag)>(.*?)</\(tag)>"
+        guard let regex = try? NSRegularExpression(pattern: pattern),
+              let match = regex.firstMatch(in: xml, range: NSRange(xml.startIndex..., in: xml)),
+              let range = Range(match.range(at: 1), in: xml) else {
+            return nil
+        }
+        
+        return String(xml[range])
+    }
+    
+    // MARK: - Debug Logging
+    
+    private func log(_ message: String) {
+        let timestamp = DateFormatter.localizedString(from: Date(), dateStyle: .none, timeStyle: .medium)
+        let logMessage = "[\(timestamp)] \(message)"
+        print(logMessage)
+        
+        DispatchQueue.main.async {
+            self.debugLog.append(logMessage)
+            // Keep only last 100 log entries
+            if self.debugLog.count > 100 {
+                self.debugLog.removeFirst()
+            }
+        }
+    }
+    
+    func clearLog() {
+        debugLog.removeAll()
+    }
+    
+    // MARK: - Manual Entry
+    
+    // Manual IP entry fallback
+    func addManualTV(ip: String, name: String = "Samsung TV") {
+        log("➕ Manually adding TV: \(name) at \(ip)")
+        
+        let tv = DiscoveredTV(
+            name: name,
+            ip: ip,
+            model: nil,
+            port: 8002
+        )
+        
+        if !discoveredTVs.contains(where: { $0.ip == tv.ip }) {
+            discoveredTVs.append(tv)
+            log("✅ Manual TV added successfully")
+        } else {
+            log("ℹ️ TV with this IP already exists")
+        }
+        
+        // Also save to persistent storage
+        saveTV(tv)
+    }
+    
+    // MARK: - Saved TVs Management
+    
+    private func loadSavedTVs() {
+        guard let data = UserDefaults.standard.data(forKey: savedTVsKey),
+              let tvs = try? JSONDecoder().decode([DiscoveredTV].self, from: data) else {
+            return
+        }
+        savedTVs = tvs
+        log("📂 Loaded \(tvs.count) saved TV(s)")
+    }
+    
+    func saveTV(_ tv: DiscoveredTV) {
+        // Remove if already exists (by IP)
+        savedTVs.removeAll(where: { $0.ip == tv.ip })
+        
+        // Add to beginning
+        savedTVs.insert(tv, at: 0)
+        
+        // Persist to UserDefaults
+        if let data = try? JSONEncoder().encode(savedTVs) {
+            UserDefaults.standard.set(data, forKey: savedTVsKey)
+            log("💾 Saved TV: \(tv.name) at \(tv.ip)")
+        }
+    }
+    
+    func removeSavedTV(_ tv: DiscoveredTV) {
+        savedTVs.removeAll(where: { $0.id == tv.id })
+        
+        if let data = try? JSONEncoder().encode(savedTVs) {
+            UserDefaults.standard.set(data, forKey: savedTVsKey)
+            log("🗑️ Removed saved TV: \(tv.name)")
+        }
+    }
+    
+    func clearSavedTVs() {
+        savedTVs.removeAll()
+        UserDefaults.standard.removeObject(forKey: savedTVsKey)
+        log("🗑️ Cleared all saved TVs")
+    }
+}
+import UIKit // Needed for UIDevice
+
