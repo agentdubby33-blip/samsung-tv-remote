@@ -8,6 +8,7 @@
 
 import SwiftUI
 import Speech
+import UIKit
 
 // MARK: - Theme Colors (from Figma tokens)
 
@@ -68,6 +69,8 @@ struct RemoteControlView: View {
                 
                 ScrollView(showsIndicators: false) {
                     VStack(spacing: 28) {
+                        disconnectedBanner
+
                         powerButton
                         
                         CardSection(colorScheme: colorScheme) {
@@ -277,6 +280,49 @@ struct RemoteControlView: View {
             }
         }
         .ignoresSafeArea(edges: .bottom)
+    }
+
+    // MARK: - Disconnected Banner
+
+    @ViewBuilder
+    private var disconnectedBanner: some View {
+        if !tv.isConnected {
+            HStack(spacing: 12) {
+                Image(systemName: "wifi.slash")
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundColor(Theme.destructive)
+
+                Text("Not connected")
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundColor(Theme.foreground(colorScheme))
+
+                Spacer()
+
+                Button(action: { tv.connect() }) {
+                    Text("Reconnect")
+                        .font(.system(size: 12, weight: .semibold))
+                        .foregroundColor(.white)
+                        .padding(.horizontal, 14)
+                        .padding(.vertical, 7)
+                        .background(
+                            Capsule()
+                                .fill(Theme.destructive)
+                        )
+                }
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
+            .background(
+                RoundedRectangle(cornerRadius: Theme.radius)
+                    .fill(Theme.destructive.opacity(0.08))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: Theme.radius)
+                            .stroke(Theme.destructive.opacity(0.25), lineWidth: 0.5)
+                    )
+            )
+            .transition(.opacity.combined(with: .move(edge: .top)))
+            .animation(.easeInOut(duration: 0.25), value: tv.isConnected)
+        }
     }
 
     // MARK: - Power Button
@@ -650,13 +696,14 @@ struct RemoteControlView: View {
                         }
                     }
                     HStack(spacing: 10) {
-                        Spacer()
+                        // Empty placeholder matching ControlButton width
+                        Color.clear.frame(width: 48, height: 48)
                         ControlButton(label: "0", colorScheme: colorScheme) {
                             tv.sendKey("KEY_0")
                         }
                         .disabled(!tv.isConnected)
-                        Spacer()
-                        Spacer()
+                        // Empty placeholder matching ControlButton width
+                        Color.clear.frame(width: 48, height: 48)
                     }
                 }
             }
@@ -993,6 +1040,11 @@ struct RemotePress: ButtonStyle {
             .scaleEffect(configuration.isPressed ? 0.95 : 1)
             .opacity(configuration.isPressed ? 0.75 : 1)
             .animation(.easeInOut(duration: 0.1), value: configuration.isPressed)
+            .onChange(of: configuration.isPressed) { _, isPressed in
+                if isPressed {
+                    UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                }
+            }
     }
 }
 
