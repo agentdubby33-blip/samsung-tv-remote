@@ -93,7 +93,9 @@ struct RemoteControlView: View {
                         streamingApps
                         
                         quickAccessButtons
-                        
+
+                        numericKeypad
+
                         if showDebugPanel {
                             debugPanel
                         }
@@ -629,6 +631,38 @@ struct RemoteControlView: View {
         }
     }
     
+    // MARK: - Numeric Keypad
+
+    private var numericKeypad: some View {
+        CardSection(colorScheme: colorScheme) {
+            VStack(spacing: 14) {
+                SectionLabel("Keypad", colorScheme: colorScheme)
+                VStack(spacing: 10) {
+                    ForEach(0..<3, id: \.self) { row in
+                        HStack(spacing: 10) {
+                            ForEach(1..<4, id: \.self) { col in
+                                let num = row * 3 + col
+                                ControlButton(label: "\(num)", colorScheme: colorScheme) {
+                                    tv.sendKey("KEY_\(num)")
+                                }
+                                .disabled(!tv.isConnected)
+                            }
+                        }
+                    }
+                    HStack(spacing: 10) {
+                        Spacer()
+                        ControlButton(label: "0", colorScheme: colorScheme) {
+                            tv.sendKey("KEY_0")
+                        }
+                        .disabled(!tv.isConnected)
+                        Spacer()
+                        Spacer()
+                    }
+                }
+            }
+        }
+    }
+
     // MARK: - Debug Panel
     
     private var debugPanel: some View {
@@ -804,30 +838,54 @@ struct PillActionButton: View {
 // MARK: - Control Button (Volume/Channel/Playback)
 
 struct ControlButton: View {
-    let icon: String
+    var icon: String? = nil
     var label: String? = nil
     let colorScheme: ColorScheme
     let action: () -> Void
-    
+
+    // Legacy convenience init — keeps existing call-sites that pass icon as first positional arg
+    init(icon: String, label: String? = nil, colorScheme: ColorScheme, action: @escaping () -> Void) {
+        self.icon = icon
+        self.label = label
+        self.colorScheme = colorScheme
+        self.action = action
+    }
+
+    // Number-only init — no icon, just a label
+    init(label: String, colorScheme: ColorScheme, action: @escaping () -> Void) {
+        self.icon = nil
+        self.label = label
+        self.colorScheme = colorScheme
+        self.action = action
+    }
+
     @Environment(\.isEnabled) var isEnabled
-    
+
     var body: some View {
         Button(action: action) {
             VStack(spacing: 4) {
-                Image(systemName: icon)
-                    .font(.system(size: 18, weight: .medium))
-                    .foregroundColor(isEnabled ? Theme.foreground(colorScheme) : Theme.mutedForeground(colorScheme))
-                    .frame(width: 48, height: 48)
-                    .background(
-                        Circle()
-                            .fill(Theme.muted(colorScheme))
-                            .overlay(
-                                Circle()
-                                    .stroke(Theme.cardBorder(colorScheme), lineWidth: 0.5)
-                            )
-                    )
-                
-                if let label = label {
+                ZStack {
+                    Circle()
+                        .fill(Theme.muted(colorScheme))
+                        .overlay(
+                            Circle()
+                                .stroke(Theme.cardBorder(colorScheme), lineWidth: 0.5)
+                        )
+                        .frame(width: 48, height: 48)
+
+                    if let icon = icon {
+                        Image(systemName: icon)
+                            .font(.system(size: 18, weight: .medium))
+                            .foregroundColor(isEnabled ? Theme.foreground(colorScheme) : Theme.mutedForeground(colorScheme))
+                    } else if let label = label {
+                        Text(label)
+                            .font(.system(size: 18, weight: .semibold))
+                            .foregroundColor(isEnabled ? Theme.foreground(colorScheme) : Theme.mutedForeground(colorScheme))
+                    }
+                }
+                .frame(width: 48, height: 48)
+
+                if icon != nil, let label = label {
                     Text(label)
                         .font(.system(size: 10, weight: .medium))
                         .foregroundColor(Theme.mutedForeground(colorScheme))
