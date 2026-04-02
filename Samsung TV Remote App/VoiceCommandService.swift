@@ -13,7 +13,7 @@ import Combine
 
 // MARK: - Voice Command Result
 
-enum VoiceCommandResult {
+enum VoiceCommandResult: Equatable {
     case key(String)                  // sendKey(_:)
     case launchApp(String)            // launchApp(appId:)
     case unknown(String)              // recognized text but no match
@@ -21,7 +21,7 @@ enum VoiceCommandResult {
 
 // MARK: - Voice Listening State
 
-enum VoiceState {
+enum VoiceState: Equatable {
     case idle
     case listening
     case processing
@@ -62,13 +62,8 @@ class VoiceCommandService: ObservableObject {
             return false
         }
 
-        let micStatus = AVAudioApplication.shared.recordingPermission
-        if micStatus == .undetermined {
-            let granted = await AVAudioApplication.requestRecordPermission()
-            return granted
-        }
-
-        return micStatus == .granted
+        let micGranted = await AVAudioApplication.requestRecordPermission()
+        return micGranted
     }
 
     // MARK: - Start / Stop Listening
@@ -149,7 +144,7 @@ class VoiceCommandService: ObservableObject {
                 if let result {
                     let transcript = result.bestTranscription.formattedString
                     self.lastTranscript = transcript
-                    self.feedbackMessage = ""\(transcript)""
+                    self.feedbackMessage = "\"\(transcript)\""
                     self.resetSilenceTimer()
 
                     if result.isFinal {
@@ -204,7 +199,7 @@ class VoiceCommandService: ObservableObject {
             case .launchApp(let id):
                 feedbackMessage = "Opening \(appNameForId(id))..."
             case .unknown(let t):
-                feedbackMessage = ""\(t)" — not recognized"
+                feedbackMessage = "\"\(t)\" — not recognized"
             }
         }
     }

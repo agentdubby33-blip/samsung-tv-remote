@@ -1,1 +1,94 @@
-aW1wb3J0IFN3aWZ0VUkKCnN0cnVjdCBDb250ZW50VmlldzogVmlldyB7CiAgICB2YXIgYm9keTogc29tZSBWaWV3IHsKICAgICAgICBEaXNjb3ZlcnlWaWV3KCkKICAgIH0KfQoKI1ByZXZpZXcgewogICAgQ29udGVudFZpZXcoKQp9CgovKgog4pqg77iPIElNUE9SVEFOVDogUE9TSVggRVJST1IgNTAgIk5ldHdvcmsgaXMgZG93biIg4pqg77iPCiAKIElmIHlvdSdyZSBzZWVpbmcgdGhpcyBlcnJvciBpbiB0aGUgZGVidWcgbG9nOgogICAgIlBPU0lYRXJyb3JDb2RlKHJhd1ZhbHVlOiA1MCk6IE5ldHdvcmsgaXMgZG93biIKIAogVGhpcyBtZWFucyBtdWx0aWNhc3QgcGFja2V0cyBjYW5ub3QgYmUgc2VudC4gCiAKICMxIE1PU1QgQ09NTU9OIENBVVNFOiBSdW5uaW5nIG9uIGlPUyBTaW11bGF0b3IKIOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkAogVGhlIGlPUyBTaW11bGF0b3IgQ0FOTk9UIHNlbmQgbXVsdGljYXN0IFVEUCBwYWNrZXRzIQogCiDinIUgU09MVVRJT046IFJ1biBvbiBhIFJFQUwgaU9TIERFVklDRQogICAgMS4gQ29ubmVjdCB5b3VyIGlQaG9uZS9pUGFkIHZpYSBVU0IKICAgIDIuIFNlbGVjdCBpdCBpbiBYY29kZSdzIGRldmljZSBtZW51ICh0b3AgdG9vbGJhcikKICAgIDMuIENsaWNrIFJ1biAoQ21kK1IpCiAgICA0LiBNYWtlIHN1cmUgZGV2aWNlIGlzIG9uIFdpRmkKIAogCiBPVEhFUiBDQVVTRVMgKGlmIG9uIHJlYWwgZGV2aWNlKToKIOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkAogCiAyLiBOb3Qgb24gV2lGaQogICAgLSBDaGVjazogU2V0dGluZ3MgPiBXaUZpCiAgICAtIENlbGx1bGFyIGRhdGEgd29uJ3Qgd29yayBmb3IgbG9jYWwgbmV0d29yayBkaXNjb3ZlcnkKIAogMy4gTWlzc2luZyBQZXJtaXNzaW9uCiAgICAtIEdyYW50ICJMb2NhbCBOZXR3b3JrIiBwZXJtaXNzaW9uIHdoZW4gcHJvbXB0ZWQKICAgIC0gT3I6IFNldHRpbmdzID4gUHJpdmFjeSAmIFNlY3VyaXR5ID4gTG9jYWwgTmV0d29yayA+IFRvZ2dsZSBPTgogCiA0LiBNaXNzaW5nIEluZm8ucGxpc3Qga2V5cyAoc2VlIGJlbG93KQogCiAKIFJFUVVJUkVEIElORk8uUExJU1QgS0VZUzoKIOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkAogCiBBZGQgdGhlc2UgdG8geW91ciBJbmZvLnBsaXN0OgogCiAxLiBMb2NhbCBOZXR3b3JrIEFjY2VzcyAoUmVxdWlyZWQgZm9yIFNTRFAgZGlzY292ZXJ5KToKICAgIEtleTogTlNMb2NhbE5ldHdvcmtVc2FnZURlc2NyaXB0aW9uCiAgICBWYWx1ZTogIlRoaXMgYXBwIG5lZWRzIGFjY2VzcyB0byB5b3VyIGxvY2FsIG5ldHdvcmsgdG8gZGlzY292ZXIgYW5kIGNvbnRyb2wgU2Ftc3VuZyBUVnMuIgogCiAyLiBCb25qb3VyIFNlcnZpY2VzIChSZXF1aXJlZCBmb3IgbXVsdGljYXN0KToKICAgIEtleTogTlNCb25qb3VyU2VydmljZXMKICAgIFZhbHVlOiBBcnJheSB3aXRoIGl0ZW0gIl9zYW1zdW5nLl90Y3AiCiAKIEhPVyBUTyBBREQgSU4gWENPREU6CiAxLiBTZWxlY3QgeW91ciBwcm9qZWN0IGluIHRoZSBuYXZpZ2F0b3IKIDIuIFNlbGVjdCB5b3VyIHRhcmdldAogMy4gR28gdG8gdGhlICJJbmZvIiB0YWIKIDQuIENsaWNrICIrIiB0byBhZGQgbmV3IHJvd3MKIDUuIEFkZCB0aGUga2V5cyBhYm92ZQogCiBFWEFNUExFIFhNTDoKIAogPGtleT5OU0xvY2FsTmV0d29ya1VzYWdlRGVzY3JpcHRpb248L2tleT4KIDxzdHJpbmc+VGhpcyBhcHAgbmVlZHMgYWNjZXNzIHRvIHlvdXIgbG9jYWwgbmV0d29yayB0byBkaXNjb3ZlciBhbmQgY29udHJvbCBTYW1zdW5nIFRWcy48L3N0cmluZz4KIAogPGtleT5OU0JvbmpvdXJTZXJ2aWNlczwva2V5PgogPGFycmF5PgogICAgIDxzdHJpbmc+X3NhbXN1bmcuX3RjcDwvc3RyaW5nPgogPC9hcnJheT4KIAogCiBRVUlDSyBESUFHTk9TVElDOgog4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQCiBSdW4gYXBwID4gVGFwICJEZWJ1ZyBMb2ciIGJ1dHRvbiA+IENoZWNrIGZvcjoKIAog4p2MICJSdW5uaW5nIG9uIFNJTVVMQVRPUiIgPSBNVVNUIHVzZSByZWFsIGRldmljZQog4pyFICJXaUZpIGNvbm5lY3Rpb24gZGV0ZWN0ZWQiID0gTmV0d29yayBPSwog4p2MICJDb25uZWN0ZWQgdmlhIGNlbGx1bGFyIiA9IFN3aXRjaCB0byBXaUZpCiDinYwgIk5ldHdvcmsgaXMgZG93biIgPSBDaGVjayBhbGwgaXRlbXMgYWJvdmUKIAogCiBBRERJVElPTkFMIE5PVEVTOgog4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQCiAtIERldmljZSBhbmQgVFYgbXVzdCBiZSBvbiB0aGUgU0FNRSBXaS1GaSBuZXR3b3JrCiAtIFRWIG11c3QgYmUgcG93ZXJlZCBPTiAobm90IGp1c3Qgc3RhbmRieSkKIC0gU29tZSBndWVzdC9wdWJsaWMgV2lGaSBuZXR3b3JrcyBibG9jayBkZXZpY2UgZGlzY292ZXJ5CiAtIElmIGRpc2NvdmVyeSBmYWlscywgdXNlICJFbnRlciBJUCBtYW51YWxseSIgYnV0dG9uCiAKICovCg==
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        DiscoveryView()
+    }
+}
+
+#Preview {
+    ContentView()
+}
+
+/*
+ ⚠️ IMPORTANT: POSIX ERROR 50 "Network is down" ⚠️
+ 
+ If you're seeing this error in the debug log:
+    "POSIXErrorCode(rawValue: 50): Network is down"
+ 
+ This means multicast packets cannot be sent. 
+ 
+ #1 MOST COMMON CAUSE: Running on iOS Simulator
+ ═══════════════════════════════════════════════
+ The iOS Simulator CANNOT send multicast UDP packets!
+ 
+ ✅ SOLUTION: Run on a REAL iOS DEVICE
+    1. Connect your iPhone/iPad via USB
+    2. Select it in Xcode's device menu (top toolbar)
+    3. Click Run (Cmd+R)
+    4. Make sure device is on WiFi
+ 
+ 
+ OTHER CAUSES (if on real device):
+ ═══════════════════════════════════════════════
+ 
+ 2. Not on WiFi
+    - Check: Settings > WiFi
+    - Cellular data won't work for local network discovery
+ 
+ 3. Missing Permission
+    - Grant "Local Network" permission when prompted
+    - Or: Settings > Privacy & Security > Local Network > Toggle ON
+ 
+ 4. Missing Info.plist keys (see below)
+ 
+ 
+ REQUIRED INFO.PLIST KEYS:
+ ═══════════════════════════════════════════════
+ 
+ Add these to your Info.plist:
+ 
+ 1. Local Network Access (Required for SSDP discovery):
+    Key: NSLocalNetworkUsageDescription
+    Value: "This app needs access to your local network to discover and control Samsung TVs."
+ 
+ 2. Bonjour Services (Required for multicast):
+    Key: NSBonjourServices
+    Value: Array with item "_samsung._tcp"
+ 
+ HOW TO ADD IN XCODE:
+ 1. Select your project in the navigator
+ 2. Select your target
+ 3. Go to the "Info" tab
+ 4. Click "+" to add new rows
+ 5. Add the keys above
+ 
+ EXAMPLE XML:
+ 
+ <key>NSLocalNetworkUsageDescription</key>
+ <string>This app needs access to your local network to discover and control Samsung TVs.</string>
+ 
+ <key>NSBonjourServices</key>
+ <array>
+     <string>_samsung._tcp</string>
+ </array>
+ 
+ 
+ QUICK DIAGNOSTIC:
+ ═══════════════════════════════════════════════
+ Run app > Tap "Debug Log" button > Check for:
+ 
+ ❌ "Running on SIMULATOR" = MUST use real device
+ ✅ "WiFi connection detected" = Network OK
+ ❌ "Connected via cellular" = Switch to WiFi
+ ❌ "Network is down" = Check all items above
+ 
+ 
+ ADDITIONAL NOTES:
+ ═══════════════════════════════════════════════
+ - Device and TV must be on the SAME Wi-Fi network
+ - TV must be powered ON (not just standby)
+ - Some guest/public WiFi networks block device discovery
+ - If discovery fails, use "Enter IP manually" button
+ 
+ */

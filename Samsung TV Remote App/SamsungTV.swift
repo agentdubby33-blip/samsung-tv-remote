@@ -1,1 +1,520 @@
-Ly8KLy8gIFNhbXN1bmdUVi5zd2lmdAovLyAgU2Ftc3VuZyBUViBSZW1vdGUKLy8KLy8gIENvcmUgbW9kZWwgZm9yIFNhbXN1bmcgVFYgY29ubmVjdGlvbiBhbmQgY29udHJvbAovLyAgVXNlcyBXZWJTb2NrZXQgKHBvcnQgODAwMikgZm9yIHJlbW90ZSBrZXlzLCBSRVNUIEFQSSAocG9ydCA4MDAxKSBmb3IgYXBwIGxhdW5jaGluZwovLwoKaW1wb3J0IEZvdW5kYXRpb24KaW1wb3J0IE5ldHdvcmsKaW1wb3J0IENvbWJpbmUKCmNsYXNzIFNhbXN1bmdUVjogTlNPYmplY3QsIE9ic2VydmFibGVPYmplY3QgewogICAgQFB1Ymxpc2hlZCB2YXIgaXNDb25uZWN0ZWQgPSBmYWxzZQogICAgQFB1Ymxpc2hlZCB2YXIgaXNQYWlyaW5nID0gZmFsc2UKICAgIEBQdWJsaXNoZWQgdmFyIHR2TmFtZTogU3RyaW5nID0gIiIKICAgIEBQdWJsaXNoZWQgdmFyIGluc3RhbGxlZEFwcHM6IFtbU3RyaW5nOiBBbnldXSA9IFtdCiAgICBAUHVibGlzaGVkIHZhciBkZWJ1Z0xvZzogW1N0cmluZ10gPSBbXQogICAgCiAgICBwcml2YXRlIHZhciB3ZWJTb2NrZXRUYXNrOiBVUkxTZXNzaW9uV2ViU29ja2V0VGFzaz8KICAgIHByaXZhdGUgdmFyIHVybFNlc3Npb246IFVSTFNlc3Npb24/CiAgICBsZXQgdHZJUDogU3RyaW5nCiAgICBwcml2YXRlIGxldCB0dlBvcnQ6IEludAogICAgcHJpdmF0ZSB2YXIgdG9rZW46IFN0cmluZz8KICAgIAogICAgcHJpdmF0ZSBsZXQgYXBwTmFtZSA9ICJTYW1zdW5nIFRWIFJlbW90ZSIKICAgIAogICAgLy8gQXV0by1yZWNvbm5lY3Qgc3RhdGUKICAgIHByaXZhdGUgdmFyIHNob3VsZEJlQ29ubmVjdGVkID0gZmFsc2UKICAgIHByaXZhdGUgdmFyIHJlY29ubmVjdEF0dGVtcHRzID0gMAogICAgcHJpdmF0ZSBsZXQgbWF4UmVjb25uZWN0QXR0ZW1wdHMgPSA1CiAgICBwcml2YXRlIHZhciByZWNvbm5lY3RUaW1lcjogVGltZXI/CiAgICBwcml2YXRlIHZhciBwaW5nVGltZXI6IFRpbWVyPwogICAgCiAgICBpbml0KGlwOiBTdHJpbmcsIHBvcnQ6IEludCA9IDgwMDIpIHsKICAgICAgICBzZWxmLnR2SVAgPSBpcAogICAgICAgIHNlbGYudHZQb3J0ID0gcG9ydAogICAgICAgIHN1cGVyLmluaXQoKQogICAgICAgIHNlbGYudG9rZW4gPSBVc2VyRGVmYXVsdHMuc3RhbmRhcmQuc3RyaW5nKGZvcktleTogInNhbXN1bmdfdHZfdG9rZW5fXChpcCkiKQogICAgfQogICAgCiAgICBkZWluaXQgewogICAgICAgIHN0b3BUaW1lcnMoKQogICAgfQogICAgCiAgICAvLyBNQVJLOiAtIERlYnVnIExvZ2dpbmcKICAgIAogICAgcHJpdmF0ZSBmdW5jIGxvZyhfIG1lc3NhZ2U6IFN0cmluZykgewogICAgICAgIHByaW50KG1lc3NhZ2UpCiAgICAgICAgRGlzcGF0Y2hRdWV1ZS5tYWluLmFzeW5jIHsKICAgICAgICAgICAgc2VsZi5kZWJ1Z0xvZy5hcHBlbmQoIltcKFNlbGYudGltZXN0YW1wKV0gXChtZXNzYWdlKSIpCiAgICAgICAgICAgIGlmIHNlbGYuZGVidWdMb2cuY291bnQgPiAxMDAgewogICAgICAgICAgICAgICAgc2VsZi5kZWJ1Z0xvZy5yZW1vdmVGaXJzdCgpCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9CiAgICAKICAgIHByaXZhdGUgc3RhdGljIHZhciB0aW1lc3RhbXA6IFN0cmluZyB7CiAgICAgICAgbGV0IGZvcm1hdHRlciA9IERhdGVGb3JtYXR0ZXIoKQogICAgICAgIGZvcm1hdHRlci5kYXRlRm9ybWF0ID0gIkhIOm1tOnNzLlNTUyIKICAgICAgICByZXR1cm4gZm9ybWF0dGVyLnN0cmluZyhmcm9tOiBEYXRlKCkpCiAgICB9CiAgICAKICAgIGZ1bmMgY2xlYXJMb2coKSB7CiAgICAgICAgRGlzcGF0Y2hRdWV1ZS5tYWluLmFzeW5jIHsKICAgICAgICAgICAgc2VsZi5kZWJ1Z0xvZy5yZW1vdmVBbGwoKQogICAgICAgIH0KICAgIH0KICAgIAogICAgLy8gTUFSSzogLSBDb25uZWN0aW9uIChXZWJTb2NrZXQgb24gcG9ydCA4MDAyKQogICAgCiAgICBmdW5jIGNvbm5lY3QoKSB7CiAgICAgICAgZ3VhcmQgd2ViU29ja2V0VGFzayA9PSBuaWwgZWxzZSB7CiAgICAgICAgICAgIGxvZygi8J+UjCBBbHJlYWR5IGNvbm5lY3RlZCBvciBjb25uZWN0aW5nIikKICAgICAgICAgICAgcmV0dXJuCiAgICAgICAgfQogICAgICAgIAogICAgICAgIHNob3VsZEJlQ29ubmVjdGVkID0gdHJ1ZQogICAgICAgIAogICAgICAgIGxldCBjb25maWd1cmF0aW9uID0gVVJMU2Vzc2lvbkNvbmZpZ3VyYXRpb24uZGVmYXVsdAogICAgICAgIHVybFNlc3Npb24gPSBVUkxTZXNzaW9uKGNvbmZpZ3VyYXRpb246IGNvbmZpZ3VyYXRpb24sIGRlbGVnYXRlOiBzZWxmLCBkZWxlZ2F0ZVF1ZXVlOiBPcGVyYXRpb25RdWV1ZSgpKQogICAgICAgIAogICAgICAgIHZhciB1cmxTdHJpbmcgPSAid3NzOi8vXCh0dklQKTpcKHR2UG9ydCkvYXBpL3YyL2NoYW5uZWxzL3NhbXN1bmcucmVtb3RlLmNvbnRyb2wiCiAgICAgICAgCiAgICAgICAgaWYgbGV0IHRva2VuID0gdG9rZW4gewogICAgICAgICAgICB1cmxTdHJpbmcgKz0gIj90b2tlbj1cKHRva2VuKSIKICAgICAgICAgICAgbG9nKCLwn5SRIENvbm5lY3Rpbmcgd2l0aCBzYXZlZCB0b2tlbiIpCiAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgbGV0IG5hbWVCYXNlNjQgPSBhcHBOYW1lLmRhdGEodXNpbmc6IC51dGY4KT8uYmFzZTY0RW5jb2RlZFN0cmluZygpID8/ICIiCiAgICAgICAgICAgIHVybFN0cmluZyArPSAiP25hbWU9XChuYW1lQmFzZTY0KSIKICAgICAgICAgICAgbG9nKCLwn4aVIEZpcnN0IGNvbm5lY3Rpb24gLSBwYWlyaW5nIG1vZGUiKQogICAgICAgIH0KICAgICAgICAKICAgICAgICBndWFyZCBsZXQgdXJsID0gVVJMKHN0cmluZzogdXJsU3RyaW5nKSBlbHNlIHsKICAgICAgICAgICAgbG9nKCLinYwgSW52YWxpZCBVUkw6IFwodXJsU3RyaW5nKSIpCiAgICAgICAgICAgIHJldHVybgogICAgICAgIH0KICAgICAgICAKICAgICAgICBsb2coIvCflIwgQ29ubmVjdGluZyB0byBcKHR2SVApOlwodHZQb3J0KS4uLiIpCiAgICAgICAgCiAgICAgICAgd2ViU29ja2V0VGFzayA9IHVybFNlc3Npb24/LndlYlNvY2tldFRhc2sod2l0aDogdXJsKQogICAgICAgIHdlYlNvY2tldFRhc2s/LnJlc3VtZSgpCiAgICAgICAgcmVjZWl2ZU1lc3NhZ2UoKQogICAgICAgIAogICAgICAgIGlmIHRva2VuID09IG5pbCB7CiAgICAgICAgICAgIGlzUGFpcmluZyA9IHRydWUKICAgICAgICB9CiAgICB9CiAgICAKICAgIGZ1bmMgZGlzY29ubmVjdCgpIHsKICAgICAgICBzaG91bGRCZUNvbm5lY3RlZCA9IGZhbHNlCiAgICAgICAgcmVjb25uZWN0QXR0ZW1wdHMgPSAwCiAgICAgICAgc3RvcFRpbWVycygpCiAgICAgICAgCiAgICAgICAgd2ViU29ja2V0VGFzaz8uY2FuY2VsKHdpdGg6IC5nb2luZ0F3YXksIHJlYXNvbjogbmlsKQogICAgICAgIHdlYlNvY2tldFRhc2sgPSBuaWwKICAgICAgICAKICAgICAgICBEaXNwYXRjaFF1ZXVlLm1haW4uYXN5bmMgewogICAgICAgICAgICBzZWxmLmlzQ29ubmVjdGVkID0gZmFsc2UKICAgICAgICB9CiAgICAgICAgbG9nKCLwn5SMIERpc2Nvbm5lY3RlZCAobWFudWFsKSIpCiAgICB9CiAgICAKICAgIC8vIE1BUks6IC0gQXV0by1SZWNvbm5lY3QKICAgIAogICAgLy8vIENhbGxlZCB3aGVuIHRoZSBhcHAgcmV0dXJucyB0byBmb3JlZ3JvdW5kCiAgICBmdW5jIHJlY29ubmVjdElmTmVlZGVkKCkgewogICAgICAgIGd1YXJkIHNob3VsZEJlQ29ubmVjdGVkIGVsc2UgewogICAgICAgICAgICBsb2coIvCflIwgTm8gcmVjb25uZWN0IG5lZWRlZCAtIG5vdCBwcmV2aW91c2x5IGNvbm5lY3RlZCIpCiAgICAgICAgICAgIHJldHVybgogICAgICAgIH0KICAgICAgICAKICAgICAgICBpZiBpc0Nvbm5lY3RlZCB7CiAgICAgICAgICAgIC8vIFNlbmQgYSBwaW5nIHRvIGNoZWNrIGlmIGNvbm5lY3Rpb24gaXMgYWN0dWFsbHkgYWxpdmUKICAgICAgICAgICAgbG9nKCLwn5SMIENoZWNraW5nIGNvbm5lY3Rpb24gaGVhbHRoLi4uIikKICAgICAgICAgICAgc2VuZFBpbmcoKQogICAgICAgICAgICByZXR1cm4KICAgICAgICB9CiAgICAgICAgCiAgICAgICAgbG9nKCLwn5SMIEFwcCByZXR1cm5lZCB0byBmb3JlZ3JvdW5kIC0gcmVjb25uZWN0aW5nLi4uIikKICAgICAgICByZWNvbm5lY3RBdHRlbXB0cyA9IDAKICAgICAgICBhdHRlbXB0UmVjb25uZWN0KCkKICAgIH0KICAgIAogICAgcHJpdmF0ZSBmdW5jIGF0dGVtcHRSZWNvbm5lY3QoKSB7CiAgICAgICAgZ3VhcmQgc2hvdWxkQmVDb25uZWN0ZWQgZWxzZSB7IHJldHVybiB9CiAgICAgICAgZ3VhcmQgcmVjb25uZWN0QXR0ZW1wdHMgPCBtYXhSZWNvbm5lY3RBdHRlbXB0cyBlbHNlIHsKICAgICAgICAgICAgbG9nKCLinYwgTWF4IHJlY29ubmVjdCBhdHRlbXB0cyAoXChtYXhSZWNvbm5lY3RBdHRlbXB0cykpIHJlYWNoZWQiKQogICAgICAgICAgICByZXR1cm4KICAgICAgICB9CiAgICAgICAgCiAgICAgICAgcmVjb25uZWN0QXR0ZW1wdHMgKz0gMQogICAgICAgIGxvZygi8J+UhCBSZWNvbm5lY3QgYXR0ZW1wdCBcKHJlY29ubmVjdEF0dGVtcHRzKS9cKG1heFJlY29ubmVjdEF0dGVtcHRzKS4uLiIpCiAgICAgICAgCiAgICAgICAgLy8gQ2xlYW4gdXAgb2xkIGNvbm5lY3Rpb24KICAgICAgICB3ZWJTb2NrZXRUYXNrPy5jYW5jZWwod2l0aDogLmdvaW5nQXdheSwgcmVhc29uOiBuaWwpCiAgICAgICAgd2ViU29ja2V0VGFzayA9IG5pbAogICAgICAgIHVybFNlc3Npb24gPSBuaWwKICAgICAgICAKICAgICAgICAvLyBTbWFsbCBkZWxheSBiZWZvcmUgcmVjb25uZWN0aW5nIChleHBvbmVudGlhbCBiYWNrb2ZmKQogICAgICAgIGxldCBkZWxheSA9IG1pbihEb3VibGUocmVjb25uZWN0QXR0ZW1wdHMpICogMS4wLCA1LjApCiAgICAgICAgCiAgICAgICAgRGlzcGF0Y2hRdWV1ZS5tYWluLmFzeW5jQWZ0ZXIoZGVhZGxpbmU6IC5ub3coKSArIGRlbGF5KSB7IFt3ZWFrIHNlbGZdIGluCiAgICAgICAgICAgIGd1YXJkIGxldCBzZWxmID0gc2VsZiwgc2VsZi5zaG91bGRCZUNvbm5lY3RlZCBlbHNlIHsgcmV0dXJuIH0KICAgICAgICAgICAgc2VsZi5jb25uZWN0SW50ZXJuYWwoKQogICAgICAgIH0KICAgIH0KICAgIAogICAgLy8vIEludGVybmFsIGNvbm5lY3Qgd2l0aG91dCByZXNldHRpbmcgc2hvdWxkQmVDb25uZWN0ZWQKICAgIHByaXZhdGUgZnVuYyBjb25uZWN0SW50ZXJuYWwoKSB7CiAgICAgICAgZ3VhcmQgd2ViU29ja2V0VGFzayA9PSBuaWwgZWxzZSB7IHJldHVybiB9CiAgICAgICAgCiAgICAgICAgbGV0IGNvbmZpZ3VyYXRpb24gPSBVUkxTZXNzaW9uQ29uZmlndXJhdGlvbi5kZWZhdWx0CiAgICAgICAgdXJsU2Vzc2lvbiA9IFVSTFNlc3Npb24oY29uZmlndXJhdGlvbjogY29uZmlndXJhdGlvbiwgZGVsZWdhdGU6IHNlbGYsIGRlbGVnYXRlUXVldWU6IE9wZXJhdGlvblF1ZXVlKCkpCiAgICAgICAgCiAgICAgICAgdmFyIHVybFN0cmluZyA9ICJ3c3M6Ly9cKHR2SVApOlwodHZQb3J0KS9hcGkvdjIvY2hhbm5lbHMvc2Ftc3VuZy5yZW1vdGUuY29udHJvbCIKICAgICAgICAKICAgICAgICBpZiBsZXQgdG9rZW4gPSB0b2tlbiB7CiAgICAgICAgICAgIHVybFN0cmluZyArPSAiP3Rva2VuPVwodG9rZW4pIgogICAgICAgIH0gZWxzZSB7CiAgICAgICAgICAgIGxldCBuYW1lQmFzZTY0ID0gYXBwTmFtZS5kYXRhKHVzaW5nOiAudXRmOCk/LmJhc2U2NEVuY29kZWRTdHJpbmcoKSA/PyAiIgogICAgICAgICAgICB1cmxTdHJpbmcgKz0gIj9uYW1lPVwobmFtZUJhc2U2NCkiCiAgICAgICAgfQogICAgICAgIAogICAgICAgIGd1YXJkIGxldCB1cmwgPSBVUkwoc3RyaW5nOiB1cmxTdHJpbmcpIGVsc2UgewogICAgICAgICAgICBsb2coIuKdjCBJbnZhbGlkIFVSTCIpCiAgICAgICAgICAgIHJldHVybgogICAgICAgIH0KICAgICAgICAKICAgICAgICB3ZWJTb2NrZXRUYXNrID0gdXJsU2Vzc2lvbj8ud2ViU29ja2V0VGFzayh3aXRoOiB1cmwpCiAgICAgICAgd2ViU29ja2V0VGFzaz8ucmVzdW1lKCkKICAgICAgICByZWNlaXZlTWVzc2FnZSgpCiAgICAgICAgCiAgICAgICAgaWYgdG9rZW4gPT0gbmlsIHsKICAgICAgICAgICAgRGlzcGF0Y2hRdWV1ZS5tYWluLmFzeW5jIHsKICAgICAgICAgICAgICAgIHNlbGYuaXNQYWlyaW5nID0gdHJ1ZQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQogICAgCiAgICAvLyBNQVJLOiAtIEtlZXAtQWxpdmUgUGluZwogICAgCiAgICBwcml2YXRlIGZ1bmMgc3RhcnRQaW5nVGltZXIoKSB7CiAgICAgICAgc3RvcFBpbmdUaW1lcigpCiAgICAgICAgRGlzcGF0Y2hRdWV1ZS5tYWluLmFzeW5jIHsKICAgICAgICAgICAgc2VsZi5waW5nVGltZXIgPSBUaW1lci5zY2hlZHVsZWRUaW1lcih3aXRoVGltZUludGVydmFsOiAzMC4wLCByZXBlYXRzOiB0cnVlKSB7IFt3ZWFrIHNlbGZdIF8gaW4KICAgICAgICAgICAgICAgIHNlbGY/LnNlbmRQaW5nKCkKICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KICAgIAogICAgcHJpdmF0ZSBmdW5jIHN0b3BQaW5nVGltZXIoKSB7CiAgICAgICAgcGluZ1RpbWVyPy5pbnZhbGlkYXRlKCkKICAgICAgICBwaW5nVGltZXIgPSBuaWwKICAgIH0KICAgIAogICAgcHJpdmF0ZSBmdW5jIHN0b3BUaW1lcnMoKSB7CiAgICAgICAgc3RvcFBpbmdUaW1lcigpCiAgICAgICAgcmVjb25uZWN0VGltZXI/LmludmFsaWRhdGUoKQogICAgICAgIHJlY29ubmVjdFRpbWVyID0gbmlsCiAgICB9CiAgICAKICAgIHByaXZhdGUgZnVuYyBzZW5kUGluZygpIHsKICAgICAgICB3ZWJTb2NrZXRUYXNrPy5zZW5kUGluZyB7IFt3ZWFrIHNlbGZdIGVycm9yIGluCiAgICAgICAgICAgIGlmIGxldCBlcnJvciA9IGVycm9yIHsKICAgICAgICAgICAgICAgIHNlbGY/LmxvZygi4p2MIFBpbmcgZmFpbGVkOiBcKGVycm9yLmxvY2FsaXplZERlc2NyaXB0aW9uKSIpCiAgICAgICAgICAgICAgICBEaXNwYXRjaFF1ZXVlLm1haW4uYXN5bmMgewogICAgICAgICAgICAgICAgICAgIHNlbGY/LmlzQ29ubmVjdGVkID0gZmFsc2UKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIC8vIENvbm5lY3Rpb24gaXMgZGVhZCwgdHJ5IHRvIHJlY29ubmVjdAogICAgICAgICAgICAgICAgc2VsZj8uYXR0ZW1wdFJlY29ubmVjdCgpCiAgICAgICAgICAgIH0gZWxzZSB7CiAgICAgICAgICAgICAgICBzZWxmPy5sb2coIvCfkpMgUGluZyBPSyIpCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9CiAgICAKICAgIC8vLyBDYWxsZWQgd2hlbiBhcHAgZ29lcyB0byBiYWNrZ3JvdW5kIC0gcGF1c2UgdGhlIHBpbmcgdGltZXIKICAgIGZ1bmMgYXBwRGlkRW50ZXJCYWNrZ3JvdW5kKCkgewogICAgICAgIGxvZygi8J+UjCBBcHAgYmFja2dyb3VuZGVkIC0gcGF1c2luZyBrZWVwLWFsaXZlIikKICAgICAgICBzdG9wUGluZ1RpbWVyKCkKICAgIH0KICAgIAogICAgLy8gTUFSSzogLSBXZWJTb2NrZXQgTWVzc2FnZSBIYW5kbGluZwogICAgCiAgICBwcml2YXRlIGZ1bmMgcmVjZWl2ZU1lc3NhZ2UoKSB7CiAgICAgICAgd2ViU29ja2V0VGFzaz8ucmVjZWl2ZSB7IFt3ZWFrIHNlbGZdIHJlc3VsdCBpbgogICAgICAgICAgICBzd2l0Y2ggcmVzdWx0IHsKICAgICAgICAgICAgY2FzZSAuc3VjY2VzcyhsZXQgbWVzc2FnZSk6CiAgICAgICAgICAgICAgICBzd2l0Y2ggbWVzc2FnZSB7CiAgICAgICAgICAgICAgICBjYXNlIC5zdHJpbmcobGV0IHRleHQpOgogICAgICAgICAgICAgICAgICAgIHNlbGY/LmhhbmRsZU1lc3NhZ2UodGV4dCkKICAgICAgICAgICAgICAgIGNhc2UgLmRhdGEobGV0IGRhdGEpOgogICAgICAgICAgICAgICAgICAgIGlmIGxldCB0ZXh0ID0gU3RyaW5nKGRhdGE6IGRhdGEsIGVuY29kaW5nOiAudXRmOCkgewogICAgICAgICAgICAgICAgICAgICAgICBzZWxmPy5oYW5kbGVNZXNzYWdlKHRleHQpCiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgQHVua25vd24gZGVmYXVsdDoKICAgICAgICAgICAgICAgICAgICBicmVhawogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgc2VsZj8ucmVjZWl2ZU1lc3NhZ2UoKQogICAgICAgICAgICAgICAgCiAgICAgICAgICAgIGNhc2UgLmZhaWx1cmUobGV0IGVycm9yKToKICAgICAgICAgICAgICAgIHNlbGY/LmxvZygi4p2MIFdlYlNvY2tldCBlcnJvcjogXChlcnJvci5sb2NhbGl6ZWREZXNjcmlwdGlvbikiKQogICAgICAgICAgICAgICAgRGlzcGF0Y2hRdWV1ZS5tYWluLmFzeW5jIHsKICAgICAgICAgICAgICAgICAgICBzZWxmPy5pc0Nvbm5lY3RlZCA9IGZhbHNlCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAvLyBBdXRvLXJlY29ubmVjdCBvbiB1bmV4cGVjdGVkIGRpc2Nvbm5lY3QKICAgICAgICAgICAgICAgIHNlbGY/LnN0b3BQaW5nVGltZXIoKQogICAgICAgICAgICAgICAgaWYgc2VsZj8uc2hvdWxkQmVDb25uZWN0ZWQgPT0gdHJ1ZSB7CiAgICAgICAgICAgICAgICAgICAgc2VsZj8ubG9nKCLwn5SEIENvbm5lY3Rpb24gbG9zdCAtIHdpbGwgYXR0ZW1wdCByZWNvbm5lY3QuLi4iKQogICAgICAgICAgICAgICAgICAgIERpc3BhdGNoUXVldWUubWFpbi5hc3luY0FmdGVyKGRlYWRsaW5lOiAubm93KCkgKyAyLjApIHsKICAgICAgICAgICAgICAgICAgICAgICAgc2VsZj8uYXR0ZW1wdFJlY29ubmVjdCgpCiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQogICAgCiAgICBwcml2YXRlIGZ1bmMgaGFuZGxlTWVzc2FnZShfIHRleHQ6IFN0cmluZykgewogICAgICAgIGxvZygi8J+TpSBSZWNlaXZlZDogXCh0ZXh0LnByZWZpeCgzMDApKSIpCiAgICAgICAgCiAgICAgICAgZ3VhcmQgbGV0IGRhdGEgPSB0ZXh0LmRhdGEodXNpbmc6IC51dGY4KSwKICAgICAgICAgICAgICBsZXQganNvbiA9IHRyeT8gSlNPTlNlcmlhbGl6YXRpb24uanNvbk9iamVjdCh3aXRoOiBkYXRhKSBhcz8gW1N0cmluZzogQW55XSwKICAgICAgICAgICAgICBsZXQgZXZlbnQgPSBqc29uWyJldmVudCJdIGFzPyBTdHJpbmcgZWxzZSB7CiAgICAgICAgICAgIHJldHVybgogICAgICAgIH0KICAgICAgICAKICAgICAgICBsb2coIvCfk6UgRXZlbnQ6IFwoZXZlbnQpIikKICAgICAgICAKICAgICAgICBEaXNwYXRjaFF1ZXVlLm1haW4uYXN5bmMgewogICAgICAgICAgICBzd2l0Y2ggZXZlbnQgewogICAgICAgICAgICBjYXNlICJtcy5jaGFubmVsLmNvbm5lY3QiOgogICAgICAgICAgICAgICAgc2VsZi5pc0Nvbm5lY3RlZCA9IHRydWUKICAgICAgICAgICAgICAgIHNlbGYuaXNQYWlyaW5nID0gZmFsc2UKICAgICAgICAgICAgICAgIHNlbGYucmVjb25uZWN0QXR0ZW1wdHMgPSAwCiAgICAgICAgICAgICAgICBzZWxmLmxvZygi4pyFIENvbm5lY3RlZCBzdWNjZXNzZnVsbHkhIikKICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgLy8gU3RhcnQga2VlcC1hbGl2ZSBwaW5nCiAgICAgICAgICAgICAgICBzZWxmLnN0YXJ0UGluZ1RpbWVyKCkKICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgaWYgbGV0IGRhdGEgPSBqc29uWyJkYXRhIl0gYXM/IFtTdHJpbmc6IEFueV0sCiAgICAgICAgICAgICAgICAgICBsZXQgdG9rZW4gPSBkYXRhWyJ0b2tlbiJdIGFzPyBTdHJpbmcgewogICAgICAgICAgICAgICAgICAgIHNlbGYudG9rZW4gPSB0b2tlbgogICAgICAgICAgICAgICAgICAgIFVzZXJEZWZhdWx0cy5zdGFuZGFyZC5zZXQodG9rZW4sIGZvcktleTogInNhbXN1bmdfdHZfdG9rZW5fXChzZWxmLnR2SVApIikKICAgICAgICAgICAgICAgICAgICBzZWxmLmxvZygi8J+UkSBUb2tlbiBzYXZlZCIpCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgY2FzZSAibXMuY2hhbm5lbC51bmF1dGhvcml6ZWQiOgogICAgICAgICAgICAgICAgc2VsZi5pc1BhaXJpbmcgPSB0cnVlCiAgICAgICAgICAgICAgICBzZWxmLmxvZygi4pqg77iPIFVuYXV0aG9yaXplZCAtIG5lZWQgdG8gcGFpciIpCiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgZGVmYXVsdDoKICAgICAgICAgICAgICAgIGJyZWFrCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9CiAgICAKICAgIC8vIE1BUks6IC0gUmVtb3RlIENvbnRyb2wgS2V5cyAodmlhIFdlYlNvY2tldCkKICAgIAogICAgZnVuYyBzZW5kS2V5KF8ga2V5OiBTdHJpbmcpIHsKICAgICAgICBndWFyZCBpc0Nvbm5lY3RlZCBlbHNlIHsKICAgICAgICAgICAgbG9nKCLinYwgQ2Fubm90IHNlbmQga2V5IC0gbm90IGNvbm5lY3RlZCIpCiAgICAgICAgICAgIHJldHVybgogICAgICAgIH0KICAgICAgICAKICAgICAgICBsb2coIvCflJggU2VuZGluZyBrZXk6IFwoa2V5KSIpCiAgICAgICAgCiAgICAgICAgbGV0IG1lc3NhZ2U6IFtTdHJpbmc6IEFueV0gPSBbCiAgICAgICAgICAgICJtZXRob2QiOiAibXMucmVtb3RlLmNvbnRyb2wiLAogICAgICAgICAgICAicGFyYW1zIjogWwogICAgICAgICAgICAgICAgIkNtZCI6ICJDbGljayIsCiAgICAgICAgICAgICAgICAiRGF0YU9mQ21kIjoga2V5LAogICAgICAgICAgICAgICAgIk9wdGlvbiI6ICJmYWxzZSIsCiAgICAgICAgICAgICAgICAiVHlwZU9mUmVtb3RlIjogIlNlbmRSZW1vdGVLZXkiCiAgICAgICAgICAgIF0KICAgICAgICBdCiAgICAgICAgCiAgICAgICAgc2VuZFdlYlNvY2tldE1lc3NhZ2UobWVzc2FnZSkKICAgIH0KICAgIAogICAgcHJpdmF0ZSBmdW5jIHNlbmRXZWJTb2NrZXRNZXNzYWdlKF8gbWVzc2FnZTogW1N0cmluZzogQW55XSkgewogICAgICAgIGd1YXJkIGxldCBkYXRhID0gdHJ5PyBKU09OU2VyaWFsaXphdGlvbi5kYXRhKHdpdGhKU09OT2JqZWN0OiBtZXNzYWdlKSwKICAgICAgICAgICAgICBsZXQgdGV4dCA9IFN0cmluZyhkYXRhOiBkYXRhLCBlbmNvZGluZzogLnV0ZjgpIGVsc2UgewogICAgICAgICAgICBsb2coIuKdjCBGYWlsZWQgdG8gc2VyaWFsaXplIG1lc3NhZ2UiKQogICAgICAgICAgICByZXR1cm4KICAgICAgICB9CiAgICAgICAgCiAgICAgICAgbGV0IHdzTWVzc2FnZSA9IFVSTFNlc3Npb25XZWJTb2NrZXRUYXNrLk1lc3NhZ2Uuc3RyaW5nKHRleHQpCiAgICAgICAgd2ViU29ja2V0VGFzaz8uc2VuZCh3c01lc3NhZ2UpIHsgW3dlYWsgc2VsZl0gZXJyb3IgaW4KICAgICAgICAgICAgaWYgbGV0IGVycm9yID0gZXJyb3IgewogICAgICAgICAgICAgICAgc2VsZj8ubG9nKCLinYwgU2VuZCBlcnJvcjogXChlcnJvci5sb2NhbGl6ZWREZXNjcmlwdGlvbikiKQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQogICAgCiAgICAvLyBNQVJLOiAtIEFwcCBMYXVuY2hpbmcgKFJFU1QgQVBJIG9uIHBvcnQgODAwMSkKICAgIAogICAgLy8vIExhdW5jaCBhcHAgdmlhIEhUVFAgUE9TVCB0byB0aGUgVFYncyBSRVNUIEFQSQogICAgZnVuYyBsYXVuY2hBcHAoYXBwSWQ6IFN0cmluZykgewogICAgICAgIGd1YXJkIGlzQ29ubmVjdGVkIGVsc2UgewogICAgICAgICAgICBsb2coIuKdjCBDYW5ub3QgbGF1bmNoIGFwcCAtIG5vdCBjb25uZWN0ZWQiKQogICAgICAgICAgICByZXR1cm4KICAgICAgICB9CiAgICAgICAgCiAgICAgICAgbG9nKCLwn5qAIExhdW5jaGluZyBhcHA6IFwoYXBwSWQpIikKICAgICAgICAKICAgICAgICBsZXQgdXJsU3RyaW5nID0gImh0dHA6Ly9cKHR2SVApOjgwMDEvYXBpL3YyL2FwcGxpY2F0aW9ucy9cKGFwcElkKSIKICAgICAgICBndWFyZCBsZXQgdXJsID0gVVJMKHN0cmluZzogdXJsU3RyaW5nKSBlbHNlIHsKICAgICAgICAgICAgbG9nKCLinYwgSW52YWxpZCBVUkw6IFwodXJsU3RyaW5nKSIpCiAgICAgICAgICAgIHJldHVybgogICAgICAgIH0KICAgICAgICAKICAgICAgICB2YXIgcmVxdWVzdCA9IFVSTFJlcXVlc3QodXJsOiB1cmwpCiAgICAgICAgcmVxdWVzdC5odHRwTWV0aG9kID0gIlBPU1QiCiAgICAgICAgcmVxdWVzdC5zZXRWYWx1ZSgiYXBwbGljYXRpb24vanNvbiIsIGZvckhUVFBIZWFkZXJGaWVsZDogIkNvbnRlbnQtVHlwZSIpCiAgICAgICAgcmVxdWVzdC50aW1lb3V0SW50ZXJ2YWwgPSAxMAogICAgICAgIHJlcXVlc3QuaHR0cEJvZHkgPSB0cnk/IEpTT05TZXJpYWxpemF0aW9uLmRhdGEod2l0aEpTT05PYmplY3Q6IFs6XSkKICAgICAgICAKICAgICAgICBsb2coIvCfk6QgUE9TVCDihpIgXCh1cmxTdHJpbmcpIikKICAgICAgICAKICAgICAgICBVUkxTZXNzaW9uLnNoYXJlZC5kYXRhVGFzayh3aXRoOiByZXF1ZXN0KSB7IFt3ZWFrIHNlbGZdIGRhdGEsIHJlc3BvbnNlLCBlcnJvciBpbgogICAgICAgICAgICBEaXNwYXRjaFF1ZXVlLm1haW4uYXN5bmMgewogICAgICAgICAgICAgICAgaWYgbGV0IGVycm9yID0gZXJyb3IgewogICAgICAgICAgICAgICAgICAgIHNlbGY/LmxvZygi4p2MIExhdW5jaCBlcnJvcjogXChlcnJvci5sb2NhbGl6ZWREZXNjcmlwdGlvbikiKQogICAgICAgICAgICAgICAgICAgIHJldHVybgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICBsZXQgc3RhdHVzID0gKHJlc3BvbnNlIGFzPyBIVFRQVVJMUmVzcG9uc2UpPy5zdGF0dXNDb2RlID8/IDAKICAgICAgICAgICAgICAgIGxldCBib2R5ID0gZGF0YS5mbGF0TWFwIHsgU3RyaW5nKGRhdGE6ICQwLCBlbmNvZGluZzogLnV0ZjgpIH0gPz8gIiIKICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgc3dpdGNoIHN0YXR1cyB7CiAgICAgICAgICAgICAgICBjYXNlIDIwMCwgMjAxOgogICAgICAgICAgICAgICAgICAgIHNlbGY/LmxvZygi4pyFIEFwcCBsYXVuY2hlZCEgKFwoc3RhdHVzKSkiKQogICAgICAgICAgICAgICAgY2FzZSA0MDQ6CiAgICAgICAgICAgICAgICAgICAgc2VsZj8ubG9nKCLinYwgQXBwIG5vdCBmb3VuZCAoNDA0KSAtIG1heSBuZWVkIHRvIGluc3RhbGwgZnJvbSBTYW1zdW5nIGFwcCBzdG9yZSIpCiAgICAgICAgICAgICAgICBjYXNlIDQwMzoKICAgICAgICAgICAgICAgICAgICBzZWxmPy5sb2coIuKdjCBGb3JiaWRkZW4gKDQwMykgLSBUViBtYXkgbmVlZCByZS1wYWlyaW5nIikKICAgICAgICAgICAgICAgIGNhc2UgNTAzOgogICAgICAgICAgICAgICAgICAgIHNlbGY/LmxvZygi4pqg77iPIFRWIGJ1c3kgKDUwMykgLSB0cnkgYWdhaW4iKQogICAgICAgICAgICAgICAgZGVmYXVsdDoKICAgICAgICAgICAgICAgICAgICBzZWxmPy5sb2coIuKaoO+4jyBTdGF0dXMgXChzdGF0dXMpOiBcKGJvZHkucHJlZml4KDIwMCkpIikKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgIH0ucmVzdW1lKCkKICAgIH0KICAgIAogICAgLy8gTUFSSzogLSBEaXNjb3ZlciBJbnN0YWxsZWQgQXBwcyAoUkVTVCBBUEkpCiAgICAKICAgIC8vLyBQcm9iZSBrbm93biBhcHAgSURzIHRvIGZpbmQgd2hpY2ggb25lcyBhcmUgaW5zdGFsbGVkIG9uIHRoaXMgVFYKICAgIGZ1bmMgZ2V0SW5zdGFsbGVkQXBwcygpIHsKICAgICAgICBndWFyZCBpc0Nvbm5lY3RlZCBlbHNlIHsKICAgICAgICAgICAgbG9nKCLinYwgQ2Fubm90IGdldCBhcHBzIC0gbm90IGNvbm5lY3RlZCIpCiAgICAgICAgICAgIHJldHVybgogICAgICAgIH0KICAgICAgICAKICAgICAgICBsb2coIvCfk7EgU2Nhbm5pbmcgZm9yIGluc3RhbGxlZCBhcHBzLi4uIikKICAgICAgICAKICAgICAgICBsZXQga25vd25BcHBzOiBbKFN0cmluZywgU3RyaW5nKV0gPSBbCiAgICAgICAgICAgICgiTmV0ZmxpeCIsICIzMjAxOTA3MDE4ODA3IiksCiAgICAgICAgICAgICgiWW91VHViZSIsICIxMTEyOTkwMDE5MTIiKSwKICAgICAgICAgICAgKCJQcmltZSBWaWRlbyIsICIzMjAxOTEwMDE5MzY1IiksCiAgICAgICAgICAgICgiSHVsdSIsICIzMjAxNjAxMDA3NjI1IiksCiAgICAgICAgICAgICgiQXBwbGUgVFYiLCAiMzIwMTgwNzAxNjU5NyIpLAogICAgICAgICAgICAoIlR1YmkiLCAiMzIwMTUwNDAwMTk2NSIpLAogICAgICAgICAgICAoIk1heCIsICIzMjAyMzAxMDI5NzYwIiksCiAgICAgICAgICAgICgiSEJPIE1heCIsICIzMjAxNjAxMDA3MjMwIiksCiAgICAgICAgICAgICgiRGlzbmV5KyIsICIzMjAxOTAxMDE3NjQwIiksCiAgICAgICAgICAgICgiRGlzbmV5KyB2MiIsICIzMjAyMDA5MDIxNzA5IiksCiAgICAgICAgICAgICgiUGVhY29jayIsICIzMjAyMDA2MDIwOTkxIiksCiAgICAgICAgICAgICgiUGFyYW1vdW50KyIsICIzMjAxNzEwMDE0OTgxIiksCiAgICAgICAgICAgICgiUGFyYW1vdW50KyB2MiIsICIzMjAyMTEwMDI1MzA1IiksCiAgICAgICAgICAgICgiRVNQTiIsICIzMjAxNzA4MDE0NjE4IiksCiAgICAgICAgICAgICgiU3BvdGlmeSIsICIzMjAxNjA2MDA5Njg0IiksCiAgICAgICAgICAgICgiQXBwbGUgTXVzaWMiLCAiMzIwMTkwODAxOTA0MSIpLAogICAgICAgICAgICAoIlBsdXRvIFRWIiwgIjMyMDE4MDgwMTY4MDIiKSwKICAgICAgICAgICAgKCJQbGV4IiwgIjMyMDE1MTIwMDY5NjMiKSwKICAgICAgICAgICAgKCJUd2l0Y2giLCAiMzIwMjIwMzAyNjg0MSIpLAogICAgICAgICAgICAoIllvdVR1YmUgVFYiLCAiMzIwMTcwNzAxNDQ4OSIpLAogICAgICAgIF0KICAgICAgICAKICAgICAgICB2YXIgZm91bmRBcHBzOiBbW1N0cmluZzogQW55XV0gPSBbXQogICAgICAgIGxldCBncm91cCA9IERpc3BhdGNoR3JvdXAoKQogICAgICAgIGxldCBsb2NrID0gTlNMb2NrKCkKICAgICAgICAKICAgICAgICBmb3IgKG5hbWUsIGFwcElkKSBpbiBrbm93bkFwcHMgewogICAgICAgICAgICBncm91cC5lbnRlcigpCiAgICAgICAgICAgIAogICAgICAgICAgICBsZXQgdXJsU3RyaW5nID0gImh0dHA6Ly9cKHR2SVApOjgwMDEvYXBpL3YyL2FwcGxpY2F0aW9ucy9cKGFwcElkKSIKICAgICAgICAgICAgZ3VhcmQgbGV0IHVybCA9IFVSTChzdHJpbmc6IHVybFN0cmluZykgZWxzZSB7CiAgICAgICAgICAgICAgICBncm91cC5sZWF2ZSgpCiAgICAgICAgICAgICAgICBjb250aW51ZQogICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICB2YXIgcmVxdWVzdCA9IFVSTFJlcXVlc3QodXJsOiB1cmwpCiAgICAgICAgICAgIHJlcXVlc3QuaHR0cE1ldGhvZCA9ICJHRVQiCiAgICAgICAgICAgIHJlcXVlc3QudGltZW91dEludGVydmFsID0gNQogICAgICAgICAgICAKICAgICAgICAgICAgVVJMU2Vzc2lvbi5zaGFyZWQuZGF0YVRhc2sod2l0aDogcmVxdWVzdCkgeyBbd2VhayBzZWxmXSBkYXRhLCByZXNwb25zZSwgZXJyb3IgaW4KICAgICAgICAgICAgICAgIGRlZmVyIHsgZ3JvdXAubGVhdmUoKSB9CiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIGxldCBzdGF0dXMgPSAocmVzcG9uc2UgYXM/IEhUVFBVUkxSZXNwb25zZSk/LnN0YXR1c0NvZGUgPz8gMAogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICBpZiBzdGF0dXMgPT0gMjAwLCBsZXQgZGF0YSA9IGRhdGEsCiAgICAgICAgICAgICAgICAgICBsZXQganNvbiA9IHRyeT8gSlNPTlNlcmlhbGl6YXRpb24uanNvbk9iamVjdCh3aXRoOiBkYXRhKSBhcz8gW1N0cmluZzogQW55XSB7CiAgICAgICAgICAgICAgICAgICAgbGV0IHJlYWxOYW1lID0ganNvblsibmFtZSJdIGFzPyBTdHJpbmcgPz8gbmFtZQogICAgICAgICAgICAgICAgICAgIGxldCBhcHBJbmZvOiBbU3RyaW5nOiBBbnldID0gWwogICAgICAgICAgICAgICAgICAgICAgICAiYXBwSWQiOiBhcHBJZCwKICAgICAgICAgICAgICAgICAgICAgICAgIm5hbWUiOiByZWFsTmFtZSwKICAgICAgICAgICAgICAgICAgICAgICAgInJ1bm5pbmciOiBqc29uWyJydW5uaW5nIl0gYXM/IEJvb2wgPz8gZmFsc2UsCiAgICAgICAgICAgICAgICAgICAgICAgICJ2ZXJzaW9uIjoganNvblsidmVyc2lvbiJdIGFzPyBTdHJpbmcgPz8gIiIKICAgICAgICAgICAgICAgICAgICBdCiAgICAgICAgICAgICAgICAgICAgbG9jay5sb2NrKCkKICAgICAgICAgICAgICAgICAgICBmb3VuZEFwcHMuYXBwZW5kKGFwcEluZm8pCiAgICAgICAgICAgICAgICAgICAgbG9jay51bmxvY2soKQogICAgICAgICAgICAgICAgICAgIHNlbGY/LmxvZygiICDinIUgXChyZWFsTmFtZSkg4oaSIFwoYXBwSWQpIikKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfS5yZXN1bWUoKQogICAgICAgIH0KICAgICAgICAKICAgICAgICBncm91cC5ub3RpZnkocXVldWU6IC5tYWluKSB7IFt3ZWFrIHNlbGZdIGluCiAgICAgICAgICAgIHNlbGY/Lmluc3RhbGxlZEFwcHMgPSBmb3VuZEFwcHMuc29ydGVkIHsKICAgICAgICAgICAgICAgICgkMFsibmFtZSJdIGFzPyBTdHJpbmcgPz8gIiIpIDwgKCQxWyJuYW1lIl0gYXM/IFN0cmluZyA/PyAiIikKICAgICAgICAgICAgfQogICAgICAgICAgICBzZWxmPy5sb2coIvCfk7EgRm91bmQgXChmb3VuZEFwcHMuY291bnQpIGluc3RhbGxlZCBhcHBzIikKICAgICAgICB9CiAgICB9Cn0KCi8vIE1BUks6IC0gVVJMU2Vzc2lvbldlYlNvY2tldERlbGVnYXRlCgpleHRlbnNpb24gU2Ftc3VuZ1RWOiBVUkxTZXNzaW9uV2ViU29ja2V0RGVsZWdhdGUgewogICAgZnVuYyB1cmxTZXNzaW9uKF8gc2Vzc2lvbjogVVJMU2Vzc2lvbiwgd2ViU29ja2V0VGFzazogVVJMU2Vzc2lvbldlYlNvY2tldFRhc2ssIGRpZE9wZW5XaXRoUHJvdG9jb2wgcHJvdG9jb2w6IFN0cmluZz8pIHsKICAgICAgICBsb2coIvCflIwgV2ViU29ja2V0IG9wZW5lZCIpCiAgICB9CiAgICAKICAgIGZ1bmMgdXJsU2Vzc2lvbihfIHNlc3Npb246IFVSTFNlc3Npb24sIHdlYlNvY2tldFRhc2s6IFVSTFNlc3Npb25XZWJTb2NrZXRUYXNrLCBkaWRDbG9zZVdpdGggY2xvc2VDb2RlOiBVUkxTZXNzaW9uV2ViU29ja2V0VGFzay5DbG9zZUNvZGUsIHJlYXNvbjogRGF0YT8pIHsKICAgICAgICBsb2coIvCflIwgV2ViU29ja2V0IGNsb3NlZCAoY29kZTogXChjbG9zZUNvZGUucmF3VmFsdWUpKSIpCiAgICAgICAgRGlzcGF0Y2hRdWV1ZS5tYWluLmFzeW5jIHsKICAgICAgICAgICAgc2VsZi5pc0Nvbm5lY3RlZCA9IGZhbHNlCiAgICAgICAgfQogICAgICAgIHN0b3BQaW5nVGltZXIoKQogICAgICAgIAogICAgICAgIC8vIEF1dG8tcmVjb25uZWN0IGlmIHdlIHNob3VsZCBzdGlsbCBiZSBjb25uZWN0ZWQKICAgICAgICBpZiBzaG91bGRCZUNvbm5lY3RlZCB7CiAgICAgICAgICAgIGxvZygi8J+UhCBDb25uZWN0aW9uIGNsb3NlZCB1bmV4cGVjdGVkbHkgLSB3aWxsIHJlY29ubmVjdC4uLiIpCiAgICAgICAgICAgIERpc3BhdGNoUXVldWUubWFpbi5hc3luY0FmdGVyKGRlYWRsaW5lOiAubm93KCkgKyAyLjApIHsgW3dlYWsgc2VsZl0gaW4KICAgICAgICAgICAgICAgIHNlbGY/LmF0dGVtcHRSZWNvbm5lY3QoKQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQogICAgCiAgICBmdW5jIHVybFNlc3Npb24oXyBzZXNzaW9uOiBVUkxTZXNzaW9uLCB0YXNrOiBVUkxTZXNzaW9uVGFzaywgZGlkUmVjZWl2ZSBjaGFsbGVuZ2U6IFVSTEF1dGhlbnRpY2F0aW9uQ2hhbGxlbmdlLCBjb21wbGV0aW9uSGFuZGxlcjogQGVzY2FwaW5nIChVUkxTZXNzaW9uLkF1dGhDaGFsbGVuZ2VEaXNwb3NpdGlvbiwgVVJMQ3JlZGVudGlhbD8pIC0+IFZvaWQpIHsKICAgICAgICBpZiBjaGFsbGVuZ2UucHJvdGVjdGlvblNwYWNlLmF1dGhlbnRpY2F0aW9uTWV0aG9kID09IE5TVVJMQXV0aGVudGljYXRpb25NZXRob2RTZXJ2ZXJUcnVzdCwKICAgICAgICAgICBsZXQgc2VydmVyVHJ1c3QgPSBjaGFsbGVuZ2UucHJvdGVjdGlvblNwYWNlLnNlcnZlclRydXN0IHsKICAgICAgICAgICAgY29tcGxldGlvbkhhbmRsZXIoLnVzZUNyZWRlbnRpYWwsIFVSTENyZWRlbnRpYWwodHJ1c3Q6IHNlcnZlclRydXN0KSkKICAgICAgICB9IGVsc2UgewogICAgICAgICAgICBjb21wbGV0aW9uSGFuZGxlcigucGVyZm9ybURlZmF1bHRIYW5kbGluZywgbmlsKQogICAgICAgIH0KICAgIH0KfQo=
+//
+//  SamsungTV.swift
+//  Samsung TV Remote
+//
+//  Core model for Samsung TV connection and control
+//  Uses WebSocket (port 8002) for remote keys, REST API (port 8001) for app launching
+//
+
+import Foundation
+import Network
+import Combine
+
+class SamsungTV: NSObject, ObservableObject {
+    @Published var isConnected = false
+    @Published var isPairing = false
+    @Published var tvName: String = ""
+    @Published var installedApps: [[String: Any]] = []
+    @Published var debugLog: [String] = []
+    
+    private var webSocketTask: URLSessionWebSocketTask?
+    private var urlSession: URLSession?
+    let tvIP: String
+    private let tvPort: Int
+    private var token: String?
+    
+    private let appName = "Samsung TV Remote"
+    
+    // Auto-reconnect state
+    private var shouldBeConnected = false
+    private var reconnectAttempts = 0
+    private let maxReconnectAttempts = 5
+    private var reconnectTimer: Timer?
+    private var pingTimer: Timer?
+    
+    init(ip: String, port: Int = 8002) {
+        self.tvIP = ip
+        self.tvPort = port
+        super.init()
+        self.token = UserDefaults.standard.string(forKey: "samsung_tv_token_\(ip)")
+    }
+    
+    deinit {
+        stopTimers()
+    }
+    
+    // MARK: - Debug Logging
+    
+    private func log(_ message: String) {
+        print(message)
+        DispatchQueue.main.async {
+            self.debugLog.append("[\(Self.timestamp)] \(message)")
+            if self.debugLog.count > 100 {
+                self.debugLog.removeFirst()
+            }
+        }
+    }
+    
+    private static var timestamp: String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm:ss.SSS"
+        return formatter.string(from: Date())
+    }
+    
+    func clearLog() {
+        DispatchQueue.main.async {
+            self.debugLog.removeAll()
+        }
+    }
+    
+    // MARK: - Connection (WebSocket on port 8002)
+    
+    func connect() {
+        guard webSocketTask == nil else {
+            log("🔌 Already connected or connecting")
+            return
+        }
+        
+        shouldBeConnected = true
+        
+        let configuration = URLSessionConfiguration.default
+        urlSession = URLSession(configuration: configuration, delegate: self, delegateQueue: OperationQueue())
+        
+        var urlString = "wss://\(tvIP):\(tvPort)/api/v2/channels/samsung.remote.control"
+        
+        if let token = token {
+            urlString += "?token=\(token)"
+            log("🔑 Connecting with saved token")
+        } else {
+            let nameBase64 = appName.data(using: .utf8)?.base64EncodedString() ?? ""
+            urlString += "?name=\(nameBase64)"
+            log("🆕 First connection - pairing mode")
+        }
+        
+        guard let url = URL(string: urlString) else {
+            log("❌ Invalid URL: \(urlString)")
+            return
+        }
+        
+        log("🔌 Connecting to \(tvIP):\(tvPort)...")
+        
+        webSocketTask = urlSession?.webSocketTask(with: url)
+        webSocketTask?.resume()
+        receiveMessage()
+        
+        if token == nil {
+            isPairing = true
+        }
+    }
+    
+    func disconnect() {
+        shouldBeConnected = false
+        reconnectAttempts = 0
+        stopTimers()
+        
+        webSocketTask?.cancel(with: .goingAway, reason: nil)
+        webSocketTask = nil
+        
+        DispatchQueue.main.async {
+            self.isConnected = false
+        }
+        log("🔌 Disconnected (manual)")
+    }
+    
+    // MARK: - Auto-Reconnect
+    
+    /// Called when the app returns to foreground
+    func reconnectIfNeeded() {
+        guard shouldBeConnected else {
+            log("🔌 No reconnect needed - not previously connected")
+            return
+        }
+        
+        if isConnected {
+            // Send a ping to check if connection is actually alive
+            log("🔌 Checking connection health...")
+            sendPing()
+            return
+        }
+        
+        log("🔌 App returned to foreground - reconnecting...")
+        reconnectAttempts = 0
+        attemptReconnect()
+    }
+    
+    private func attemptReconnect() {
+        guard shouldBeConnected else { return }
+        guard reconnectAttempts < maxReconnectAttempts else {
+            log("❌ Max reconnect attempts (\(maxReconnectAttempts)) reached")
+            return
+        }
+        
+        reconnectAttempts += 1
+        log("🔄 Reconnect attempt \(reconnectAttempts)/\(maxReconnectAttempts)...")
+        
+        // Clean up old connection
+        webSocketTask?.cancel(with: .goingAway, reason: nil)
+        webSocketTask = nil
+        urlSession = nil
+        
+        // Small delay before reconnecting (exponential backoff)
+        let delay = min(Double(reconnectAttempts) * 1.0, 5.0)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
+            guard let self = self, self.shouldBeConnected else { return }
+            self.connectInternal()
+        }
+    }
+    
+    /// Internal connect without resetting shouldBeConnected
+    private func connectInternal() {
+        guard webSocketTask == nil else { return }
+        
+        let configuration = URLSessionConfiguration.default
+        urlSession = URLSession(configuration: configuration, delegate: self, delegateQueue: OperationQueue())
+        
+        var urlString = "wss://\(tvIP):\(tvPort)/api/v2/channels/samsung.remote.control"
+        
+        if let token = token {
+            urlString += "?token=\(token)"
+        } else {
+            let nameBase64 = appName.data(using: .utf8)?.base64EncodedString() ?? ""
+            urlString += "?name=\(nameBase64)"
+        }
+        
+        guard let url = URL(string: urlString) else {
+            log("❌ Invalid URL")
+            return
+        }
+        
+        webSocketTask = urlSession?.webSocketTask(with: url)
+        webSocketTask?.resume()
+        receiveMessage()
+        
+        if token == nil {
+            DispatchQueue.main.async {
+                self.isPairing = true
+            }
+        }
+    }
+    
+    // MARK: - Keep-Alive Ping
+    
+    private func startPingTimer() {
+        stopPingTimer()
+        DispatchQueue.main.async {
+            self.pingTimer = Timer.scheduledTimer(withTimeInterval: 30.0, repeats: true) { [weak self] _ in
+                self?.sendPing()
+            }
+        }
+    }
+    
+    private func stopPingTimer() {
+        pingTimer?.invalidate()
+        pingTimer = nil
+    }
+    
+    private func stopTimers() {
+        stopPingTimer()
+        reconnectTimer?.invalidate()
+        reconnectTimer = nil
+    }
+    
+    private func sendPing() {
+        webSocketTask?.sendPing { [weak self] error in
+            if let error = error {
+                self?.log("❌ Ping failed: \(error.localizedDescription)")
+                DispatchQueue.main.async {
+                    self?.isConnected = false
+                }
+                // Connection is dead, try to reconnect
+                self?.attemptReconnect()
+            } else {
+                self?.log("💓 Ping OK")
+            }
+        }
+    }
+    
+    /// Called when app goes to background - pause the ping timer
+    func appDidEnterBackground() {
+        log("🔌 App backgrounded - pausing keep-alive")
+        stopPingTimer()
+    }
+    
+    // MARK: - WebSocket Message Handling
+    
+    private func receiveMessage() {
+        webSocketTask?.receive { [weak self] result in
+            switch result {
+            case .success(let message):
+                switch message {
+                case .string(let text):
+                    self?.handleMessage(text)
+                case .data(let data):
+                    if let text = String(data: data, encoding: .utf8) {
+                        self?.handleMessage(text)
+                    }
+                @unknown default:
+                    break
+                }
+                self?.receiveMessage()
+                
+            case .failure(let error):
+                self?.log("❌ WebSocket error: \(error.localizedDescription)")
+                DispatchQueue.main.async {
+                    self?.isConnected = false
+                }
+                // Auto-reconnect on unexpected disconnect
+                self?.stopPingTimer()
+                if self?.shouldBeConnected == true {
+                    self?.log("🔄 Connection lost - will attempt reconnect...")
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                        self?.attemptReconnect()
+                    }
+                }
+            }
+        }
+    }
+    
+    private func handleMessage(_ text: String) {
+        log("📥 Received: \(text.prefix(300))")
+        
+        guard let data = text.data(using: .utf8),
+              let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+              let event = json["event"] as? String else {
+            return
+        }
+        
+        log("📥 Event: \(event)")
+        
+        DispatchQueue.main.async {
+            switch event {
+            case "ms.channel.connect":
+                self.isConnected = true
+                self.isPairing = false
+                self.reconnectAttempts = 0
+                self.log("✅ Connected successfully!")
+                
+                // Start keep-alive ping
+                self.startPingTimer()
+                
+                if let data = json["data"] as? [String: Any],
+                   let token = data["token"] as? String {
+                    self.token = token
+                    UserDefaults.standard.set(token, forKey: "samsung_tv_token_\(self.tvIP)")
+                    self.log("🔑 Token saved")
+                }
+                
+            case "ms.channel.unauthorized":
+                self.isPairing = true
+                self.log("⚠️ Unauthorized - need to pair")
+                
+            default:
+                break
+            }
+        }
+    }
+    
+    // MARK: - Remote Control Keys (via WebSocket)
+    
+    func sendKey(_ key: String) {
+        guard isConnected else {
+            log("❌ Cannot send key - not connected")
+            return
+        }
+        
+        log("🔘 Sending key: \(key)")
+        
+        let message: [String: Any] = [
+            "method": "ms.remote.control",
+            "params": [
+                "Cmd": "Click",
+                "DataOfCmd": key,
+                "Option": "false",
+                "TypeOfRemote": "SendRemoteKey"
+            ]
+        ]
+        
+        sendWebSocketMessage(message)
+    }
+    
+    private func sendWebSocketMessage(_ message: [String: Any]) {
+        guard let data = try? JSONSerialization.data(withJSONObject: message),
+              let text = String(data: data, encoding: .utf8) else {
+            log("❌ Failed to serialize message")
+            return
+        }
+        
+        let wsMessage = URLSessionWebSocketTask.Message.string(text)
+        webSocketTask?.send(wsMessage) { [weak self] error in
+            if let error = error {
+                self?.log("❌ Send error: \(error.localizedDescription)")
+            }
+        }
+    }
+    
+    // MARK: - App Launching (REST API on port 8001)
+    
+    /// Launch app via HTTP POST to the TV's REST API
+    func launchApp(appId: String) {
+        guard isConnected else {
+            log("❌ Cannot launch app - not connected")
+            return
+        }
+        
+        log("🚀 Launching app: \(appId)")
+        
+        let urlString = "http://\(tvIP):8001/api/v2/applications/\(appId)"
+        guard let url = URL(string: urlString) else {
+            log("❌ Invalid URL: \(urlString)")
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.timeoutInterval = 10
+        request.httpBody = try? JSONSerialization.data(withJSONObject: [:])
+        
+        log("📤 POST → \(urlString)")
+        
+        URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
+            DispatchQueue.main.async {
+                if let error = error {
+                    self?.log("❌ Launch error: \(error.localizedDescription)")
+                    return
+                }
+                
+                let status = (response as? HTTPURLResponse)?.statusCode ?? 0
+                let body = data.flatMap { String(data: $0, encoding: .utf8) } ?? ""
+                
+                switch status {
+                case 200, 201:
+                    self?.log("✅ App launched! (\(status))")
+                case 404:
+                    self?.log("❌ App not found (404) - may need to install from Samsung app store")
+                case 403:
+                    self?.log("❌ Forbidden (403) - TV may need re-pairing")
+                case 503:
+                    self?.log("⚠️ TV busy (503) - try again")
+                default:
+                    self?.log("⚠️ Status \(status): \(body.prefix(200))")
+                }
+            }
+        }.resume()
+    }
+    
+    // MARK: - Discover Installed Apps (REST API)
+    
+    /// Probe known app IDs to find which ones are installed on this TV
+    func getInstalledApps() {
+        guard isConnected else {
+            log("❌ Cannot get apps - not connected")
+            return
+        }
+        
+        log("📱 Scanning for installed apps...")
+        
+        let knownApps: [(String, String)] = [
+            ("Netflix", "3201907018807"),
+            ("YouTube", "111299001912"),
+            ("Prime Video", "3201910019365"),
+            ("Hulu", "3201601007625"),
+            ("Apple TV", "3201807016597"),
+            ("Tubi", "3201504001965"),
+            ("Max", "3202301029760"),
+            ("HBO Max", "3201601007230"),
+            ("Disney+", "3201901017640"),
+            ("Disney+ v2", "3202009021709"),
+            ("Peacock", "3202006020991"),
+            ("Paramount+", "3201710014981"),
+            ("Paramount+ v2", "3202110025305"),
+            ("ESPN", "3201708014618"),
+            ("Spotify", "3201606009684"),
+            ("Apple Music", "3201908019041"),
+            ("Pluto TV", "3201808016802"),
+            ("Plex", "3201512006963"),
+            ("Twitch", "3202203026841"),
+            ("YouTube TV", "3201707014489"),
+        ]
+        
+        var foundApps: [[String: Any]] = []
+        let group = DispatchGroup()
+        let lock = NSLock()
+        
+        for (name, appId) in knownApps {
+            group.enter()
+            
+            let urlString = "http://\(tvIP):8001/api/v2/applications/\(appId)"
+            guard let url = URL(string: urlString) else {
+                group.leave()
+                continue
+            }
+            
+            var request = URLRequest(url: url)
+            request.httpMethod = "GET"
+            request.timeoutInterval = 5
+            
+            URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
+                defer { group.leave() }
+                
+                let status = (response as? HTTPURLResponse)?.statusCode ?? 0
+                
+                if status == 200, let data = data,
+                   let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any] {
+                    let realName = json["name"] as? String ?? name
+                    let appInfo: [String: Any] = [
+                        "appId": appId,
+                        "name": realName,
+                        "running": json["running"] as? Bool ?? false,
+                        "version": json["version"] as? String ?? ""
+                    ]
+                    lock.lock()
+                    foundApps.append(appInfo)
+                    lock.unlock()
+                    self?.log("  ✅ \(realName) → \(appId)")
+                }
+            }.resume()
+        }
+        
+        group.notify(queue: .main) { [weak self] in
+            self?.installedApps = foundApps.sorted {
+                ($0["name"] as? String ?? "") < ($1["name"] as? String ?? "")
+            }
+            self?.log("📱 Found \(foundApps.count) installed apps")
+        }
+    }
+}
+
+// MARK: - URLSessionWebSocketDelegate
+
+extension SamsungTV: URLSessionWebSocketDelegate {
+    func urlSession(_ session: URLSession, webSocketTask: URLSessionWebSocketTask, didOpenWithProtocol protocol: String?) {
+        log("🔌 WebSocket opened")
+    }
+    
+    func urlSession(_ session: URLSession, webSocketTask: URLSessionWebSocketTask, didCloseWith closeCode: URLSessionWebSocketTask.CloseCode, reason: Data?) {
+        log("🔌 WebSocket closed (code: \(closeCode.rawValue))")
+        DispatchQueue.main.async {
+            self.isConnected = false
+        }
+        stopPingTimer()
+        
+        // Auto-reconnect if we should still be connected
+        if shouldBeConnected {
+            log("🔄 Connection closed unexpectedly - will reconnect...")
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
+                self?.attemptReconnect()
+            }
+        }
+    }
+    
+    func urlSession(_ session: URLSession, task: URLSessionTask, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+        if challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodServerTrust,
+           let serverTrust = challenge.protectionSpace.serverTrust {
+            completionHandler(.useCredential, URLCredential(trust: serverTrust))
+        } else {
+            completionHandler(.performDefaultHandling, nil)
+        }
+    }
+}

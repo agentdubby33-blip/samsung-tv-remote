@@ -1,1 +1,53 @@
-Ly8KLy8gIFNhbXN1bmdUVlJlbW90ZUFwcC5zd2lmdAovLyAgU2Ftc3VuZyBUViBSZW1vdGUKLy8KLy8gIE1haW4gYXBwIGVudHJ5IHBvaW50Ci8vCgppbXBvcnQgU3dpZnRVSQoKQG1haW4Kc3RydWN0IFNhbXN1bmdUVlJlbW90ZUFwcDogQXBwIHsKICAgIEBFbnZpcm9ubWVudChcLnNjZW5lUGhhc2UpIHByaXZhdGUgdmFyIHNjZW5lUGhhc2UKICAgIAogICAgdmFyIGJvZHk6IHNvbWUgU2NlbmUgewogICAgICAgIFdpbmRvd0dyb3VwIHsKICAgICAgICAgICAgRGlzY292ZXJ5VmlldygpCiAgICAgICAgfQogICAgICAgIC5vbkNoYW5nZShvZjogc2NlbmVQaGFzZSkgeyBvbGRQaGFzZSwgbmV3UGhhc2UgaW4KICAgICAgICAgICAgc3dpdGNoIG5ld1BoYXNlIHsKICAgICAgICAgICAgY2FzZSAuYWN0aXZlOgogICAgICAgICAgICAgICAgLy8gQXBwIHJldHVybmVkIHRvIGZvcmVncm91bmQg4oCUIHJlY29ubmVjdCBpZiBuZWVkZWQKICAgICAgICAgICAgICAgIEFjdGl2ZVRWTWFuYWdlci5zaGFyZWQucmVjb25uZWN0KCkKICAgICAgICAgICAgY2FzZSAuYmFja2dyb3VuZDoKICAgICAgICAgICAgICAgIC8vIEFwcCBnb2luZyB0byBiYWNrZ3JvdW5kIOKAlCBwYXVzZSBrZWVwLWFsaXZlIHRvIHNhdmUgYmF0dGVyeQogICAgICAgICAgICAgICAgQWN0aXZlVFZNYW5hZ2VyLnNoYXJlZC5wYXVzZUtlZXBBbGl2ZSgpCiAgICAgICAgICAgIGNhc2UgLmluYWN0aXZlOgogICAgICAgICAgICAgICAgYnJlYWsKICAgICAgICAgICAgQHVua25vd24gZGVmYXVsdDoKICAgICAgICAgICAgICAgIGJyZWFrCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9Cn0KCi8vIE1BUks6IC0gQWN0aXZlIFRWIE1hbmFnZXIKLy8gU2luZ2xldG9uIHRoYXQgaG9sZHMgYSByZWZlcmVuY2UgdG8gdGhlIGN1cnJlbnRseSBhY3RpdmUgVFYgY29ubmVjdGlvbgovLyBzbyB0aGUgYXBwIGVudHJ5IHBvaW50IGNhbiB0cmlnZ2VyIHJlY29ubmVjdHMgb24gZm9yZWdyb3VuZAoKY2xhc3MgQWN0aXZlVFZNYW5hZ2VyIHsKICAgIHN0YXRpYyBsZXQgc2hhcmVkID0gQWN0aXZlVFZNYW5hZ2VyKCkKICAgIAogICAgd2VhayB2YXIgYWN0aXZlVFY6IFNhbXN1bmdUVj8KICAgIAogICAgcHJpdmF0ZSBpbml0KCkge30KICAgIAogICAgZnVuYyByZWNvbm5lY3QoKSB7CiAgICAgICAgYWN0aXZlVFY/LnJlY29ubmVjdElmTmVlZGVkKCkKICAgIH0KICAgIAogICAgZnVuYyBwYXVzZUtlZXBBbGl2ZSgpIHsKICAgICAgICBhY3RpdmVUVj8uYXBwRGlkRW50ZXJCYWNrZ3JvdW5kKCkKICAgIH0KfQo=
+//
+//  SamsungTVRemoteApp.swift
+//  Samsung TV Remote
+//
+//  Main app entry point
+//
+
+import SwiftUI
+
+@main
+struct SamsungTVRemoteApp: App {
+    @Environment(\.scenePhase) private var scenePhase
+    
+    var body: some Scene {
+        WindowGroup {
+            DiscoveryView()
+        }
+        .onChange(of: scenePhase) { oldPhase, newPhase in
+            switch newPhase {
+            case .active:
+                // App returned to foreground — reconnect if needed
+                ActiveTVManager.shared.reconnect()
+            case .background:
+                // App going to background — pause keep-alive to save battery
+                ActiveTVManager.shared.pauseKeepAlive()
+            case .inactive:
+                break
+            @unknown default:
+                break
+            }
+        }
+    }
+}
+
+// MARK: - Active TV Manager
+// Singleton that holds a reference to the currently active TV connection
+// so the app entry point can trigger reconnects on foreground
+
+class ActiveTVManager {
+    static let shared = ActiveTVManager()
+    
+    weak var activeTV: SamsungTV?
+    
+    private init() {}
+    
+    func reconnect() {
+        activeTV?.reconnectIfNeeded()
+    }
+    
+    func pauseKeepAlive() {
+        activeTV?.appDidEnterBackground()
+    }
+}
